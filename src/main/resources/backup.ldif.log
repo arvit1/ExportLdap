@@ -1,0 +1,2647 @@
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:34.097
+dn: dc=example,dc=com
+dc: example
+objectclass: domain
+objectclass: top
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:35.494
+dn: ou=Departments,dc=example,dc=com
+ou: Departments
+objectclass: top
+objectclass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:36.414
+dn: ou=Accounting,ou=Departments,dc=example,dc=com
+ou: Accounting
+objectclass: top
+objectclass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:37.376
+dn: ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+ou: General
+objectclass: top
+objectclass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:38.671
+dn: cn=antonellagambato,ou=General,ou=Accounting,ou=Departments,dc=example,d
+ c=com
+mail: beqir.kuci@y
+telephoneNumber: 0600000000
+givenName: Antonella
+sn: Gambato
+cn: antonellagambato
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {SSHA}+3kDDoghR8UAPU+dMyFDJZ+rfzCUfPMnL/K5JQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:39.277
+dn: cn=beqir2,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+mail: beqir.kuci@y
+telephoneNumber: 0600000000
+givenName: Beqir2
+sn: bb
+cn: beqir2
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+title: Bootstrap Table Example
+userPassword: {SSHA}ugyl93U6XtjZiDs9KreQ/tullZbJd63KM+us0Q==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:39.972
+dn: cn=beqir3,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+mail: beqir.kuci@y
+telephoneNumber: 0600000000
+givenName: Beqir3
+sn: Kuci
+cn: beqir3
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+title: Bootstrap Table Example
+userPassword: {SSHA}liUpZhyZ6pBOLzBnFkAh3DMuPyx05juGqM9ToQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:41.821
+dn: cn=Carlo Rossi,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+mail: carlo.rossi@gmail.com
+employeeNumber: 1
+telephoneNumber: +39 340-123460
+givenName: Carlo
+sn: Rossi
+cn: Carlo Rossi
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: TRUE
+title: Chief Financial Officer
+userPassword: {SHA}5en6G6MezRroT3XKqkdPOmY/BfQ=
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:42.592
+dn: cn=kotkot,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+mail: test@test@tt
+givenName: kot
+sn: test
+cn: kotkot
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+title: kot
+userPassword: {SSHA}uMfRJqY7u8jR5kJkQniiRuhyQbbUlD7650mDWA==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:43.306
+dn: cn=kotkot1,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+mail: test@test@tt
+givenName: kot
+sn: test
+cn: kotkot1
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+userPassword: {SSHA}MXbKOqQ9cFxfb6d91KxcePrlUYTmvq1lgqm9FQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:44.134
+dn: ou=IT,ou=Departments,dc=example,dc=com
+ou: IT
+objectclass: top
+objectclass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:45.243
+dn: ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+ou: Development
+objectclass: top
+objectclass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:46.182
+dn: cn=Arvit Varfaj,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+mail: avarfaj86@gmail.com
+employeeNumber: 3
+telephoneNumber: +355 66-123456
+givenName: Arvit
+sn: Varfaj
+cn: Arvit Varfaj
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: TRUE
+title: Programmer
+userPassword: {MD5}SWRFE/Vl/unGyz5zctSyJA==
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:46.970
+dn: cn=Dritan Xhelili,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+mail: tanxhelili@gmail.com
+telephoneNumber: +5423452345235
+givenName: Dritan
+sn: Xhelili
+cn: Dritan Xhelili
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: false
+title: Developer
+userPassword: {MD5}vBHwavubJwcGc0caI+zGqQ==
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:47.725
+dn: cn=Ema Sena,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+mail: eme.sena@gmail.com
+employeeNumber: 4
+telephoneNumber: +355 69-123456
+givenName: Ema
+sn: Sena
+cn: Ema Sena
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: TRUE
+title: Developer
+userPassword: {MD5}SWRFE/Vl/unGyz5zctSyJA==
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:48.920
+dn: cn=test1 test2,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+mail: test2@test1.com
+telephoneNumber: +423542354325222
+givenName: test1
+sn: `test2
+cn: test1 test2
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: false
+title: test3
+userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:49.542
+dn: cn=test12 test123,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+mail: test12@test12.com
+telephoneNumber: +2342424333
+givenName: test12
+sn: test12
+cn: test12 test123
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: false
+title: test1234567
+userPassword: {MD5}vBHwavubJwcGc0caI+zGqQ==
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:50.223
+dn: cn=test9 test9,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+mail: test9@test9.com
+telephoneNumber: +523452342
+givenName: test9
+sn: test9
+cn: test9 test9
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+title: test9
+userPassword: {MD5}vBHwavubJwcGc0caI+zGqQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:51.375
+dn: cn=user test1,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+mail: beqir.kuci@y
+telephoneNumber: 0600000000
+givenName: usertest1
+sn: test
+cn: user test1
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+objectclass: primaryKeyObject
+primaryKey: 51864861
+enabled: true
+labeledURI: sdjbfuwe-wgnwignw-wergwm
+title: user for test
+userPassword: {SSHA}t36JPtmO3IX+vnCaM5qr7newDn9awJqdysmn/Q==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:52.169
+dn: ou=Information Services,ou=IT,ou=Departments,dc=example,dc=com
+ou: Information Services
+objectclass: top
+objectclass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:53.098
+dn: ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+ou: Support
+objectclass: top
+objectclass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:53.762
+dn: cn=Ada Kreci,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+mail: ada@gg
+telephoneNumber: 0600000000
+givenName: ada
+sn: Kreci
+cn: Ada Kreci
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: false
+title: ggg
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:54.833
+dn: cn=test6 updated,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+mail: test@test
+telephoneNumber: 0600000000
+givenName: test6
+sn: test6
+cn: test6 updated
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: false
+title: ggg
+userPassword: 123
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:55.603
+dn: cn=test8 test8,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+mail: test8@test8.com
+telephoneNumber: +2345234525
+givenName: test8
+sn: test8
+cn: test8 test8
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+title: test8
+userPassword: {MD5}vBHwavubJwcGc0caI+zGqQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:56.523
+dn: ou=System,ou=IT,ou=Departments,dc=example,dc=com
+ou: System
+objectclass: top
+objectclass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:57.274
+dn: cn=Andrea Lagomarsini,ou=System,ou=IT,ou=Departments,dc=example,dc=com
+mail: andrea.lagomarsini@gmail.com
+employeeNumber: 5
+telephoneNumber: +39 340-123456
+givenName: Andrea
+sn: Lagomarsini
+cn: Andrea Lagomarsini
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: TRUE
+title: Chief Technical Officer
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:58.152
+dn: ou=Marketing,ou=Departments,dc=example,dc=com
+ou: Marketing
+objectclass: top
+objectclass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:59.095
+dn: ou=Guests,ou=Marketing,ou=Departments,dc=example,dc=com
+ou: Guests
+objectClass: top
+objectClass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:32:59.837
+dn: cn=kuci.beqir@gmail.com,ou=Guests,ou=Marketing,ou=Departments,dc=example
+ ,dc=com
+mail: kuci.beqir@gmail.com
+telephoneNumber: +000 00-000000
+givenName: Beqir
+sn: Kuci
+cn: kuci.beqir@gmail.com
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+objectclass: enabledUser
+enabled: TRUE
+title: Guest user
+userPassword: {SSHA}f0SrtoecL01TLhZPoAR/Ix3emr8S0mRKGXCLjA==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:00.650
+dn: ou=Promoters,ou=Marketing,ou=Departments,dc=example,dc=com
+ou: Promoters
+objectClass: top
+objectClass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:01.479
+dn: cn=Angela Bruni,ou=Promoters,ou=Marketing,ou=Departments,dc=example,dc=c
+ om
+mail: angela.bruni@gmail.com
+employeeNumber: 6
+telephoneNumber: +39 340-123458
+givenName: Angela
+sn: Bruni
+cn: Angela Bruni
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: TRUE
+title: Promotor
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:02.137
+dn: cn=Angelo Neri,ou=Promoters,ou=Marketing,ou=Departments,dc=example,dc=co
+ m
+mail: angelo.nero@gmail.com
+employeeNumber: 10
+telephoneNumber: +355 69-123456
+givenName: Angelo
+sn: Neri
+cn: Angelo Neri
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: TRUE
+title: Promotor
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:03.082
+dn: ou=Sales,ou=Marketing,ou=Departments,dc=example,dc=com
+ou: Sales
+objectClass: top
+objectClass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:04.010
+dn: ou=Multiagenzia,ou=Departments,dc=example,dc=com
+ou: Multiagenzia
+objectClass: top
+objectClass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:05.064
+dn: ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+ou: Temporary
+objectClass: top
+objectClass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:05.879
+dn: cn=alessandrapressato,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
+ mple,dc=com
+mail: alessandrapressato
+telephoneNumber: +000 00-000000
+givenName: alessandra
+sn: pressato
+cn: alessandrapressato
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}PvDJX4IANXeQYfG7OlBolA==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:06.992
+dn: cn=alessandrobaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departments,d
+ c=example,dc=com
+mail: alessandrobaldisserotto
+telephoneNumber: +000 00-000000
+givenName: Alessandro
+sn: Baldisserotto
+cn: alessandrobaldisserotto
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}Atk7i4Fyt8sCURX3ltbGfA==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:07.687
+dn: cn=amelaidrizi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc
+ =com
+mail: amelaidrizi
+telephoneNumber: +000 00-000000
+givenName: Amela
+sn: Idrizi
+cn: amelaidrizi
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}35TAz5Buv+b9jr2hMpAP/A==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:08.541
+dn: cn=amelmathlouthi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+mail: amelmathlouthi
+telephoneNumber: +000 00-000000
+givenName:: QW1lbCA=
+sn: Mathlouthi
+cn: amelmathlouthi
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}M91JEF8mOjHsT5NG0rrElg==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:09.373
+dn: cn=andreaguerra,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+mail: andreaguerra
+telephoneNumber: +000 00-000000
+givenName: Andrea
+sn: Guerra
+cn: andreaguerra
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}x4s/zsu9bmvia+914B6ZbQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:10.208
+dn: cn=andrealagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
+ ple,dc=com
+mail: andrea.lagomarsini@evolutiontravel.com
+telephoneNumber: +000 00-000000
+givenName: Andrea
+sn: Lagomarsini
+cn: andrealagomarsini
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}KPcZyJ738zzi4XhJBna1qw==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:10.913
+dn: cn=angelapescarolo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exampl
+ e,dc=com
+mail: angelapescarolo
+telephoneNumber: +000 00-000000
+givenName: angela
+sn: pescarolo
+cn: angelapescarolo
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}wHZh9ZCswYfAO3dfusTIMQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:11.800
+dn: cn=antonioriolo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+mail: antonioriolo
+telephoneNumber: +000 00-000000
+givenName: Antonio
+sn: Riolo
+cn: antonioriolo
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}XPSzU/T/kTFSHX6YZPkqfQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:12.655
+dn: cn=ariannabertin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+mail: ariannabertin
+telephoneNumber: +000 00-000000
+givenName: arianna
+sn: bertin
+cn: ariannabertin
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}T57nyo1JfFO2zvrW9UuU1g==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:13.466
+dn: cn=barbara.cuccarolo.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=e
+ xample,dc=com
+mail: barbara.cuccarolo.to
+telephoneNumber: +000 00-000000
+givenName: Barbara
+sn: Cucarolo TO
+cn: barbara.cuccarolo.to
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}vrIyDwCuy7Q3qxQVbK7zOA==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:14.262
+dn: cn=betinagriggio,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+mail: betinagriggio
+telephoneNumber: +000 00-000000
+givenName: betina
+sn: griggio
+cn: betinagriggio
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}Iu5N/ClXuTz+Kk/3o4LSBA==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:15.067
+dn: cn=booking,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+mail: booking
+telephoneNumber: +000 00-000000
+givenName: Booking
+sn: Booking
+cn: booking
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}xdJEVQzZULmnp/93jnsMEw==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:15.872
+dn: cn=booking.de,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=
+ com
+mail: booking.de
+telephoneNumber: +000 00-000000
+givenName: Booking
+sn: De
+cn: booking.de
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}fkkClGEaZ/s2I4V36ie2oQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:16.718
+dn: cn=bookingusa,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=
+ com
+mail: bookingusa
+telephoneNumber: +000 00-000000
+givenName: bookingusa
+sn: bookingusa
+cn: bookingusa
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+objectclass: enabledUser
+enabled: TRUE
+title: Users from Multiagenzia
+userPassword: {MD5}765vSefGepMP9K08244/jw==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:17.418
+dn: cn=bruno.bottaro.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+mail: bruno.bottaro.to
+telephoneNumber: +000 00-000000
+givenName: Bruno
+sn: Bottaro TO
+cn: bruno.bottaro.to
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}cruqU7Mpazgh5SJej36TJw==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:18.239
+dn: cn=canton,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+mail: canton
+telephoneNumber: +000 00-000000
+givenName: francesco
+sn: canton
+cn: canton
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:19.339
+dn: cn=carlofalzone,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+mail: carlofalzone
+telephoneNumber: +000 00-000000
+givenName: Carlo
+sn: Falzone
+cn: carlofalzone
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}mebaCMYUiu3eLeQHvhc1Ig==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:20.006
+dn: cn=caterina.rimoli.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
+ mple,dc=com
+mail: caterina.rimoli.to
+telephoneNumber: +000 00-000000
+givenName: Caterina
+sn: Rimoli TO
+cn: caterina.rimoli.to
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}9Ti3orV5REU4n1Py1UVWUg==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:21.026
+dn: cn=chinello,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=co
+ m
+mail: chinello
+telephoneNumber: +000 00-000000
+givenName: nadia
+sn: chinello
+cn: chinello
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:21.873
+dn: cn=cogitoadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc
+ =com
+mail: cogitoadmin
+telephoneNumber: +000 00-000000
+givenName: Cogito
+sn: Srl
+cn: cogitoadmin
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}V5EC1S9JiQg3Be/HMeqG8g==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:23.100
+dn: cn=dianabashota,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+mail: dianabashota
+telephoneNumber: +000 00-000000
+givenName: Diana
+sn: Bashota
+cn: dianabashota
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}SWRFE/Vl/unGyz5zctSyJA==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:23.862
+dn: cn=elisa.magarotto@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenz
+ ia,ou=Departments,dc=example,dc=com
+mail: elisa.magarotto@evolutiontravelnetwork.com
+telephoneNumber: +000 00-000000
+givenName: evocom
+sn: evocom
+cn: elisa.magarotto@evolutiontravelnetwork.com
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:24.684
+dn: cn=essesolutions,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+mail: essesolutions
+telephoneNumber: +000 00-000000
+givenName: essesolutions
+sn: essesolutions
+cn: essesolutions
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}26HmJP0o9Svc7OApfPAtKw==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:25.473
+dn: cn=etadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+mail: etadmin
+telephoneNumber: +000 00-000000
+givenName: etadmin
+sn: etadmin
+cn: etadmin
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}Nq1lmDe3NnU/EpMj2nLvKA==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:26.293
+dn: cn=etnpagamenti,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+mail: etnpagamenti
+telephoneNumber: +000 00-000000
+givenName: etn
+sn: pagamenti
+cn: etnpagamenti
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}O6QaL58kdV4b+eP4MLZvKQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:27.238
+dn: cn=eugenabashli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+mail: eugenabashli
+telephoneNumber: +000 00-000000
+givenName: eugena
+sn: bashli
+cn: eugenabashli
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}P2mUAcUHtnFmUf8RvqLOtg==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:27.977
+dn: cn=fatjonanamali,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+mail: fatjonanamali
+telephoneNumber: +000 00-000000
+givenName: Fatjon
+sn: Anamali
+cn: fatjonanamali
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}Yaz8XUNLhX/GURi6bqEQQg==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:28.783
+dn: cn=francesco.schettini@evolutiontravelnetwork.com,ou=Temporary,ou=Multia
+ genzia,ou=Departments,dc=example,dc=com
+mail: francesco.schettini@evolutiontravelnetwork.com
+telephoneNumber: +000 00-000000
+givenName: Francesco
+sn: Schettini
+cn: francesco.schettini@evolutiontravelnetwork.com
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}zrgX5OanomC9wSeTBru+SQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:29.579
+dn: cn=franco.sparacino@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagen
+ zia,ou=Departments,dc=example,dc=com
+mail: franco.sparacino@evolutiontravelnetwork.com
+telephoneNumber: +000 00-000000
+givenName: Franco
+sn: Sparacino
+cn: franco.sparacino@evolutiontravelnetwork.com
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}1B2M2Y8AsgTpgAmY7PhCfg==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:30.355
+dn: cn=g.trivigno,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=
+ com
+mail: g.trivigno
+telephoneNumber: +000 00-000000
+givenName: Giovanni
+sn: Trivigno
+cn: g.trivigno
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}6YSRlRPUAoD9MQ/1oxvuiA==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:31.118
+dn: cn=gerhaldabashli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+mail: gerhaldabashli
+telephoneNumber: +000 00-000000
+givenName: Gerhalda
+sn: Bashli
+cn: gerhaldabashli
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}uHAmJsVDJDZrNkdRRCQdpQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:32.005
+dn: cn=giorgiadametto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+mail: giorgiadametto
+telephoneNumber: +000 00-000000
+givenName: Giorgia
+sn: Dametto
+cn: giorgiadametto
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}3UARfE6F+PC6Q66O4CggyA==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:33.038
+dn: cn=guendalinavigorelli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=ex
+ ample,dc=com
+mail: guendalinavigorelli
+telephoneNumber: +000 00-000000
+givenName: guendalina
+sn: vigorelli
+cn: guendalinavigorelli
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}CAsPS9I9m1muLTCZD2SfyQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:34.884
+dn: cn=houdaouni,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=c
+ om
+mail: houdaouni
+telephoneNumber: +000 00-000000
+givenName: Houda
+sn: Ouni
+cn: houdaouni
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}xhLctE697j+Hn9b9LM25sg==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:35.703
+dn: cn=ilircopja,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=c
+ om
+mail: ilircopja
+telephoneNumber: +000 00-000000
+givenName: Ilir
+sn: Copja
+cn: ilircopja
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}Vm6DmqWsZBEd0Sc3onFtDw==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:36.718
+dn: cn=indifatapiranaj,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exampl
+ e,dc=com
+mail: indifatapiranaj
+telephoneNumber: +000 00-000000
+givenName: Indifata
+sn: Piranaj
+cn: indifatapiranaj
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}RjlvR4060wBVzZDI1H0cAA==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:37.472
+dn: cn=intissarkrir,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+mail: intissarkrir
+telephoneNumber: +000 00-000000
+givenName: Intissar
+sn: Krir
+cn: intissarkrir
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}DtXB4zdpnPnYTG0w2ozuTg==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:38.202
+dn: cn=karim.taher@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,o
+ u=Departments,dc=example,dc=com
+mail: karim.taher@evolutiontravelnetwork.com
+telephoneNumber: +000 00-000000
+givenName: Karim
+sn: Taher
+cn: karim.taher@evolutiontravelnetwork.com
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:38.956
+dn: cn=katiuscia.tonello@gmail.com,ou=Temporary,ou=Multiagenzia,ou=Departmen
+ ts,dc=example,dc=com
+mail: katiuscia.tonello@gmail.com
+telephoneNumber: +000 00-000000
+givenName: katiuscia
+sn: tonello
+cn: katiuscia.tonello@gmail.com
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:39.728
+dn: cn=kejdabodlli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc
+ =com
+mail: kejdabodlli
+telephoneNumber: +000 00-000000
+givenName: kejda
+sn: bodlli
+cn: kejdabodlli
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}35JYX4B9tPb9nWA+4fWApg==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:40.703
+dn: cn=kotkot3,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+mail: test@tes
+telephoneNumber: 0600000000
+givenName: kot2
+sn: test
+cn: kotkot3
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: false
+title: gg
+userPassword: {SSHA}Wwxu5XLnDOaSSTARcJx3mEvmn/kPLfQ/SqQzRw==
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:41.500
+dn: cn=lauralami,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=c
+ om
+mail: lauralami
+telephoneNumber: +000 00-000000
+givenName: Laura
+sn: Lami
+cn: lauralami
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}eoZ3gqExA9bW5pc5hBig/A==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:42.554
+dn: cn=lindagharsallah,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exampl
+ e,dc=com
+mail: lindagharsallah
+telephoneNumber: +000 00-000000
+givenName: Linda
+sn: GHARSALLAH
+cn: lindagharsallah
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}mz4AgkrgrbRbLPOhlYcUzg==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:43.856
+dn: cn=lisa.favaro@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,o
+ u=Departments,dc=example,dc=com
+mail: lisa.favaro@evolutiontravelnetwork.com
+telephoneNumber: +000 00-000000
+givenName: Lisa
+sn: Favaro
+cn: lisa.favaro@evolutiontravelnetwork.com
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:45.464
+dn: cn=loris.zucchetti.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
+ mple,dc=com
+mail: loris.zucchetti.to
+telephoneNumber: +000 00-000000
+givenName: Loris
+sn: Zucchetti TO
+cn: loris.zucchetti.to
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}9badpLR8mQyqrdDysO+Y2Q==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:47.043
+dn: cn=lucabaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
+ ple,dc=com
+mail: luca.baldisserotto@evolutiontravel.com
+telephoneNumber: +000 00-000000
+givenName: Luca
+sn: Baldisserotto
+cn: lucabaldisserotto
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}o8u+Vhxm2XuDX2gCLs0VbA==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:48.704
+dn: cn=luciadaccico,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+mail: luciadaccico
+telephoneNumber: +000 00-000000
+givenName: lucia
+sn: daccico
+cn: luciadaccico
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}h1TzSAkqeTzJQhMAFa9Myg==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:50.114
+dn: cn=manuel.bisson@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia
+ ,ou=Departments,dc=example,dc=com
+mail: manuel.bisson@evolutiontravelnetwork.com
+telephoneNumber: +000 00-000000
+givenName: Manuel
+sn: Bisson
+cn: manuel.bisson@evolutiontravelnetwork.com
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:51.951
+dn: cn=manuela.aprile.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
+ ple,dc=com
+mail: manuela.aprile.to
+telephoneNumber: +000 00-000000
+givenName: Manuela
+sn: Aprile TO
+cn: manuela.aprile.to
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}8IRQ+59/OUcP6lh6H0gpQQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:53.379
+dn: cn=marcosparacino,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+mail: marcosparacino
+telephoneNumber: +000 00-000000
+givenName: marco
+sn: sparacino
+cn: marcosparacino
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}03gEJX2gEt1hYRqFtYgk5w==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:54.699
+dn: cn=mariachiaramarsella,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=ex
+ ample,dc=com
+mail: mariachiaramarsella
+telephoneNumber: +000 00-000000
+givenName: Mariachiara
+sn: Marsella
+cn: mariachiaramarsella
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}IKczmmBOEbI0WN7ZBN/vaw==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:55.952
+dn: cn=mariamhached,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+mail: mariamhached
+telephoneNumber: +000 00-000000
+givenName: Mariam
+sn: Hached
+cn: mariamhached
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}8IYa8jlaD5Xy823I4GYsXA==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:57.424
+dn: cn=marinagasparini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exampl
+ e,dc=com
+mail: marinagasparini
+telephoneNumber: +000 00-000000
+givenName: Marina
+sn: Gasparini
+cn: marinagasparini
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}vH6AiTyzf7CaNMRz/tk7vg==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:33:58.805
+dn: cn=melchionda,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=
+ com
+mail: melchionda
+telephoneNumber: +000 00-000000
+givenName: vincenzo
+sn: melchionda
+cn: melchionda
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:00.372
+dn: cn=mioaradragomir,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+mail: mioaradragomir
+telephoneNumber: +000 00-000000
+givenName: Mioara
+sn: Dragomir
+cn: mioaradragomir
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}XQ4goMzsNgz/prKLtCox8g==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:01.959
+dn: cn=monicasergiano,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+mail: monicasergiano
+telephoneNumber: +000 00-000000
+givenName: monica
+sn: sergiano
+cn: monicasergiano
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}tRzoa6dBDJ+IVzpUre22gA==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:03.419
+dn: cn=morelo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+mail: morelo
+telephoneNumber: +000 00-000000
+givenName: sara
+sn: morelo
+cn: morelo
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:04.855
+dn: cn=nicola.paci.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+mail: nicola.paci.to
+telephoneNumber: +000 00-000000
+givenName: Nicola
+sn: Paci TO
+cn: nicola.paci.to
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}jGoSqTkOx1kKZyalop+kyA==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:05.710
+dn: cn=nicolavitale,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+mail: nicolavitale
+telephoneNumber: +000 00-000000
+givenName: Nicola
+sn: Vitale
+cn: nicolavitale
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}yIoi0FNuewuAQtqho9L0Aw==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:06.532
+dn: cn=ouaelbetbout,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+mail: ouaelbetbout
+telephoneNumber: +000 00-000000
+givenName: ouael
+sn: betbout
+cn: ouaelbetbout
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}/kHXMH0zfTpKdxhnUtS2TQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:07.345
+dn: cn=pavan.elisa@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,o
+ u=Departments,dc=example,dc=com
+mail: pavan.elisa@evolutiontravelnetwork.com
+telephoneNumber: +000 00-000000
+givenName: Elisa
+sn: Pavan
+cn: pavan.elisa@evolutiontravelnetwork.com
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:08.083
+dn: cn=ptotest,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+mail: ptotest
+telephoneNumber: +000 00-000000
+givenName: ptotest
+sn: ptotest
+cn: ptotest
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}wK3Y0L7tbkFkehJAQWrYSg==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:08.866
+dn: cn=qsoftadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=
+ com
+mail: qsoftadmin
+telephoneNumber: +000 00-000000
+givenName: QSoft
+sn: QSoft
+cn: qsoftadmin
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}5Vgwh4ldmmw/1OdDXXf97w==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:09.755
+dn: cn=redazione,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=c
+ om
+mail: redazione
+telephoneNumber: +000 00-000000
+givenName: Redazione
+sn: Redazione
+cn: redazione
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+objectclass: enabledUser
+enabled: TRUE
+title: Users from Multiagenzia
+userPassword: {MD5}XMmWtoOHEcI8hr4MeAvmgg==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:10.593
+dn: cn=rimtoumi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=co
+ m
+mail: rimtoumi
+telephoneNumber: +000 00-000000
+givenName: Rim
+sn: Toumi
+cn: rimtoumi
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}wMLROpO+ZIN/VFdVGDJlIQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:11.396
+dn: cn=roberta.baldassarri.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc
+ =example,dc=com
+mail: roberta.baldassarri.to
+telephoneNumber: +000 00-000000
+givenName: Roberta
+sn: Baldassarri TO
+cn: roberta.baldassarri.to
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}5jElZ8HFq5iuI7CJcV2ZfQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:12.415
+dn: cn=simone,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+mail: simone.pegoraro@evolutiontravelnetwork.com
+telephoneNumber: +000 00-000000
+givenName: Simone
+sn: Pegoraro
+cn: simone
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}SWRFE/Vl/unGyz5zctSyJA==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:13.158
+dn: cn=soumayachebbi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+mail: soumayachebbi
+telephoneNumber: +000 00-000000
+givenName: Soumaya
+sn: Chebbi
+cn: soumayachebbi
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}h+Bt0IFPRH7mN/4oFAECew==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:14.549
+dn: cn=stelasmajli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc
+ =com
+mail: stelasmajli
+telephoneNumber: +000 00-000000
+givenName: Stela
+sn: Smajli
+cn: stelasmajli
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}QWrdURkPydbLJs0V1E1zog==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:16.024
+dn: cn=tamara.magarotto.network@evolutiontravelnetwork.com,ou=Temporary,ou=M
+ ultiagenzia,ou=Departments,dc=example,dc=com
+mail: tamara.magarotto.network@evolutiontravelnetwork.com
+telephoneNumber: +000 00-000000
+givenName: Tamara
+sn: Magarotto
+cn: tamara.magarotto.network@evolutiontravelnetwork.com
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}pgRvieg2IUvlYznUuRm5Pg==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:17.060
+dn: cn=test 5 6,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=co
+ m
+mail: test11@test
+telephoneNumber: 0600000000
+givenName: test5
+sn: test5
+cn: test 5 6
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: false
+title: Bootstrap Table Example
+userPassword: 12
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:18.174
+dn: cn=test10 test10,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+mail: test10@test10.com
+telephoneNumber: 3449994834
+givenName: test1111
+sn: test10
+cn: test10 test10
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: false
+title: test1010
+userPassword: {MD5}vBHwavubJwcGc0caI+zGqQ==
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:19.021
+dn: cn=test11 test11,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+mail: test11@test11.com
+telephoneNumber: 0600000000
+givenName: test112
+sn: test112
+cn: test11 test11
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: false
+title: test11
+userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:19.903
+dn: cn=testlead,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=co
+ m
+mail: testlead
+telephoneNumber: +000 00-000000
+givenName: testlead
+sn: testlead
+cn: testlead
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}CqXVMWc4kDFHXOch+axbZw==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:20.799
+dn: cn=testuser,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=co
+ m
+mail: testuser
+telephoneNumber: +000 00-000000
+givenName: Test user
+sn: Cogito
+cn: testuser
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}LZCPACSQcXIZqyznvKFPZQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:21.720
+dn: cn=valentina.mazzatenta.to,ou=Temporary,ou=Multiagenzia,ou=Departments,d
+ c=example,dc=com
+mail: valentina.mazzatenta.to
+telephoneNumber: +000 00-000000
+givenName: Valentina
+sn: Mazzatenta TO
+cn: valentina.mazzatenta.to
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}AOYWnyn7GLiwBTJ+gniMvw==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:22.665
+dn: cn=veramarku,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=c
+ om
+mail: veramarku
+telephoneNumber: +000 00-000000
+givenName: Vera
+sn: Marku
+cn: veramarku
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}e4vIDjTQqnIg1pmsA8i4qQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:23.527
+dn: cn=wafamejdi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=c
+ om
+mail: wafamejdi
+telephoneNumber: +000 00-000000
+givenName: wafa
+sn: mejdi
+cn: wafamejdi
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}WJ2z7iYiDMJfg+N+GgjTHg==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:24.614
+dn: cn=walter.quintavalle.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=
+ example,dc=com
+mail: walter.quintavalle.to
+telephoneNumber: +000 00-000000
+givenName: Walter
+sn: Quintavalle TO
+cn: walter.quintavalle.to
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}xi0CKGRQLhOg1/m3qd0G8w==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:25.390
+dn: cn=wirecarduser,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+mail: wirecarduser
+telephoneNumber: +000 00-000000
+givenName: w
+sn: w
+cn: wirecarduser
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}KfAE8oDJ3uT47Z7t24vfXg==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:26.493
+dn: cn=yosratoumi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=
+ com
+mail: yosratoumi
+telephoneNumber: +000 00-000000
+givenName:: WW9zcmEg
+sn: Toumi
+cn: yosratoumi
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}svaej424+y52zw6zW6c1zw==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:27.499
+dn: cn=zevalos,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+mail: zevalos
+telephoneNumber: +000 00-000000
+givenName: miranda
+sn: zevalos
+cn: zevalos
+objectclass: enabledUser
+objectclass: top
+objectclass: organizationalPerson
+objectclass: person
+objectclass: inetOrgPerson
+enabled: true
+title: Users from Multiagenzia
+userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:28.733
+dn: ou=Groups,dc=example,dc=com
+ou: Groups
+objectclass: top
+objectclass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:29.954
+dn: cn=POWER_USER,ou=Groups,dc=example,dc=com
+member: cn=Carlo Rossi,ou=General,ou=Accounting,ou=Departments,dc=example,dc
+ =com
+member: cn=Arvit Varfaj,ou=Development,ou=IT,ou=Departments,dc=example,dc=co
+ m
+member: cn=Andrea Lagomarsini,ou=System,ou=IT,ou=Departments,dc=example,dc=c
+ om
+member: cn=Angelo Neri,ou=Promoters,ou=Marketing,ou=Departments,dc=example,d
+ c=com
+cn: POWER_USER
+objectclass: top
+objectclass: groupOfNames
+objectclass: labeledURIObject
+labeledURI: 82$#%&^*)()(_)+
+description: Some More Privileges
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:30.927
+dn: cn=ROLE_ADMIN,ou=Groups,dc=example,dc=com
+cn: ROLE_ADMIN
+objectclass: top
+objectclass: groupOfNames
+member: cn=Carlo Rossi,ou=General,ou=Accounting,ou=Departments,dc=example,dc
+ =com
+member: cn=Angela Bruni,ou=Promoters,ou=Marketing,ou=Departments,dc=example,
+ dc=com
+member: cn=mioaradragomir,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
+ mple,dc=com
+member: cn=indifatapiranaj,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=ex
+ ample,dc=com
+member: cn=Ema Sena,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Ada Kreci,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+description: Super Users
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:32.490
+dn: cn=ROLE_SUPER_ADMIN,ou=Groups,dc=example,dc=com
+member: cn=System,ou=System,ou=IT,ou=Departments,dc=example,dc=com
+cn: TEST2
+cn: role_super_admin
+objectclass: top
+objectclass: groupOfNames
+description: Super admin roles, including user role administration
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:33.959
+dn: cn=ROLE_USER,ou=Groups,dc=example,dc=com
+cn: ROLE_USER
+objectclass: top
+objectclass: groupOfNames
+member: cn=Arvit Varfaj,ou=Development,ou=IT,ou=Departments,dc=example,dc=co
+ m
+member: cn=Andrea Lagomarsini,ou=System,ou=IT,ou=Departments,dc=example,dc=c
+ om
+member: cn=Ema Sena,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Carlo Rossi,ou=General,ou=Accounting,ou=Departments,dc=example,dc
+ =com
+member: cn=Angela Bruni,ou=Promoters,ou=Marketing,ou=Departments,dc=example,
+ dc=com
+member: cn=Angelo Neri,ou=Promoters,ou=Marketing,ou=Departments,dc=example,d
+ c=com
+member: cn=dianabashota,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=canton,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=
+ com
+member: cn=carlofalzone,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=mioaradragomir,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
+ mple,dc=com
+member: cn=ilircopja,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+member: cn=veramarku,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+member: cn=melchionda,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+member: cn=ariannabertin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
+ ple,dc=com
+member: cn=wirecarduser,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=etnpagamenti,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=barbara.cuccarolo.to,ou=Temporary,ou=Multiagenzia,ou=Departments,
+ dc=example,dc=com
+member: cn=antonellagambato,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=e
+ xample,dc=com
+member: cn=walter.quintavalle.to,ou=Temporary,ou=Multiagenzia,ou=Departments
+ ,dc=example,dc=com
+member: cn=essesolutions,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
+ ple,dc=com
+member: cn=tamara.magarotto.network@evolutiontravelnetwork.com,ou=Temporary,
+ ou=Multiagenzia,ou=Departments,dc=example,dc=com
+member: cn=bruno.bottaro.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=e
+ xample,dc=com
+member: cn=morelo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=
+ com
+member: cn=zevalos,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc
+ =com
+member: cn=ptotest,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc
+ =com
+member: cn=eugenabashli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=luciadaccico,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=mariachiaramarsella,ou=Temporary,ou=Multiagenzia,ou=Departments,d
+ c=example,dc=com
+member: cn=karim.taher@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenz
+ ia,ou=Departments,dc=example,dc=com
+member: cn=chinello,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+member: cn=simone.pegoraro@evolutiontravelnetwork.com,ou=Temporary,ou=Multia
+ genzia,ou=Departments,dc=example,dc=com
+member: cn=pavan.elisa@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenz
+ ia,ou=Departments,dc=example,dc=com
+member: cn=elisa.magarotto@evolutiontravelnetwork.com,ou=Temporary,ou=Multia
+ genzia,ou=Departments,dc=example,dc=com
+member: cn=katiuscia.tonello@gmail.com,ou=Temporary,ou=Multiagenzia,ou=Depar
+ tments,dc=example,dc=com
+member: cn=lisa.favaro@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenz
+ ia,ou=Departments,dc=example,dc=com
+member: cn=booking.de,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+member: cn=marcosparacino,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
+ mple,dc=com
+member: cn=franco.sparacino@evolutiontravelnetwork.com,ou=Temporary,ou=Multi
+ agenzia,ou=Departments,dc=example,dc=com
+member: cn=betinagriggio,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
+ ple,dc=com
+member: cn=loris.zucchetti.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc
+ =example,dc=com
+member: cn=bookingusa,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+member: cn=antonioriolo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=mariamhached,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=soumayachebbi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
+ ple,dc=com
+member: cn=nicola.paci.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
+ mple,dc=com
+member: cn=caterina.rimoli.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc
+ =example,dc=com
+member: cn=manuela.aprile.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=
+ example,dc=com
+member: cn=roberta.baldassarri.to,ou=Temporary,ou=Multiagenzia,ou=Department
+ s,dc=example,dc=com
+member: cn=valentina.mazzatenta.to,ou=Temporary,ou=Multiagenzia,ou=Departmen
+ ts,dc=example,dc=com
+member: cn=giorgiadametto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
+ mple,dc=com
+member: cn=houdaouni,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+member: cn=intissarkrir,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=alessandrapressato,ou=Temporary,ou=Multiagenzia,ou=Departments,dc
+ =example,dc=com
+member: cn=cogitoadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exampl
+ e,dc=com
+member: cn=andrealagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=
+ example,dc=com
+member: cn=amelaidrizi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exampl
+ e,dc=com
+member: cn=lucabaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=
+ example,dc=com
+member: cn=qsoftadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+member: cn=testlead,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+member: cn=fatjonanamali,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
+ ple,dc=com
+member: cn=kejdabodlli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exampl
+ e,dc=com
+member: cn=guendalinavigorelli,ou=Temporary,ou=Multiagenzia,ou=Departments,d
+ c=example,dc=com
+member: cn=monicasergiano,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
+ mple,dc=com
+member: cn=etadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc
+ =com
+member: cn=stelasmajli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exampl
+ e,dc=com
+member: cn=lauralami,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+member: cn=booking,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc
+ =com
+member: cn=nicolavitale,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=lindagharsallah,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=ex
+ ample,dc=com
+member: cn=redazione,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+member: cn=g.trivigno,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+member: cn=ouaelbetbout,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=yosratoumi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+member: cn=rimtoumi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+member: cn=gerhaldabashli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
+ mple,dc=com
+member: cn=andreaguerra,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=indifatapiranaj,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=ex
+ ample,dc=com
+member: cn=testuser,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+member: cn=alessandrobaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departmen
+ ts,dc=example,dc=com
+member: cn=angelapescarolo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=ex
+ ample,dc=com
+member: cn=marinagasparini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=ex
+ ample,dc=com
+member: cn=wafamejdi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+member: cn=amelmathlouthi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
+ mple,dc=com
+member: cn=francesco.schettini@evolutiontravelnetwork.com,ou=Temporary,ou=Mu
+ ltiagenzia,ou=Departments,dc=example,dc=com
+member: cn=guest@guest.com,ou=Guests,ou=Marketing,ou=Departments,dc=example,
+ dc=com
+member: cn=kuci.beqir@gmail.com,ou=Guests,ou=Marketing,ou=Departments,dc=exa
+ mple,dc=com
+member: cn=test1 test2,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=test12 test123,ou=Development,ou=IT,ou=Departments,dc=example,dc=
+ com
+member: cn=Dritan Xhelili,ou=Development,ou=IT,ou=Departments,dc=example,dc=
+ com
+member: cn=qqqqqqqq,ou=Guests,ou=Marketing,ou=Departments,dc=example,dc=com
+member: cn=kotkot,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=test8 test8,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=test9 test9,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=kotkot1,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=kotkot3,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=user test1,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=antonellagambato,ou=General,ou=Accounting,ou=Departments,dc=examp
+ le,dc=com
+member: cn=kotkot3,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc
+ =com
+member: cn=test10 test10,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
+ ple,dc=com
+member: cn=test11 test11,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
+ ple,dc=com
+member: cn=beqir2,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=beqir3,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=test 5 6,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+member: cn=test6 updated,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+description: Ordinary Users
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:35.845
+dn: cn=TestGroup_Beqir_01,ou=Groups,dc=example,dc=com
+cn: TestGroup_Beqir_01
+objectclass: top
+objectclass: groupOfNames
+member: cn=System,ou=System,ou=IT,ou=Departments,dc=example,dc=com
+description:: dGVzdCBieSBCZXFpciA=
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:37.396
+dn: ou=Oauth,dc=example,dc=com
+ou: Oauth
+objectclass: top
+objectclass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:38.226
+dn: cn=OAUTH_ROLE_PROMOTORS,ou=Oauth,dc=example,dc=com
+member: cn=Ema Sena,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Angela Bruni,ou=Promoters,ou=Marketing,ou=Departments,dc=example,
+ dc=com
+member: cn=Ada Kreci,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+oauthTokenValidity: 60000
+refreshTokenValidity: 60000
+OauthGrantType: password
+oauthScope: read
+oauthClientSecret: secret
+cn: OAUTH_ROLE_PROMOTORS
+objectclass: oauthClientIdentity
+objectclass: top
+description: Oauth Client for promoters
+oauthClientIdentifier: oauth_client_promotors
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:39.111
+dn: cn=OAUTH_ROLE_USER,ou=Oauth,dc=example,dc=com
+member: cn=Andrea Lagomarsini,ou=System,ou=IT,ou=Departments,dc=example,dc=c
+ om
+member: cn=Angelo Neri,ou=Promoters,ou=Marketing,ou=Departments,dc=example,d
+ c=com
+member: cn=Ema Sena,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=dianabashota,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=canton,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=
+ com
+member: cn=carlofalzone,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=mioaradragomir,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
+ mple,dc=com
+member: cn=ilircopja,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+member: cn=veramarku,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+member: cn=melchionda,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+member: cn=ariannabertin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
+ ple,dc=com
+member: cn=wirecarduser,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=etnpagamenti,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=barbara.cuccarolo.to,ou=Temporary,ou=Multiagenzia,ou=Departments,
+ dc=example,dc=com
+member: cn=antonellagambato,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=e
+ xample,dc=com
+member: cn=walter.quintavalle.to,ou=Temporary,ou=Multiagenzia,ou=Departments
+ ,dc=example,dc=com
+member: cn=essesolutions,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
+ ple,dc=com
+member: cn=tamara.magarotto.network@evolutiontravelnetwork.com,ou=Temporary,
+ ou=Multiagenzia,ou=Departments,dc=example,dc=com
+member: cn=bruno.bottaro.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=e
+ xample,dc=com
+member: cn=morelo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=
+ com
+member: cn=zevalos,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc
+ =com
+member: cn=ptotest,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc
+ =com
+member: cn=eugenabashli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=luciadaccico,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=mariachiaramarsella,ou=Temporary,ou=Multiagenzia,ou=Departments,d
+ c=example,dc=com
+member: cn=karim.taher@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenz
+ ia,ou=Departments,dc=example,dc=com
+member: cn=chinello,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+member: cn=manuel.bisson@evolutiontravelnetwork.com,ou=Temporary,ou=Multiage
+ nzia,ou=Departments,dc=example,dc=com
+member: cn=simone.pegoraro@evolutiontravelnetwork.com,ou=Temporary,ou=Multia
+ genzia,ou=Departments,dc=example,dc=com
+member: cn=pavan.elisa@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenz
+ ia,ou=Departments,dc=example,dc=com
+member: cn=elisa.magarotto@evolutiontravelnetwork.com,ou=Temporary,ou=Multia
+ genzia,ou=Departments,dc=example,dc=com
+member: cn=katiuscia.tonello@gmail.com,ou=Temporary,ou=Multiagenzia,ou=Depar
+ tments,dc=example,dc=com
+member: cn=lisa.favaro@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenz
+ ia,ou=Departments,dc=example,dc=com
+member: cn=booking.de,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+member: cn=alessandra.bettoni.to,ou=Temporary,ou=Multiagenzia,ou=Departments
+ ,dc=example,dc=com
+member: cn=marcosparacino,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
+ mple,dc=com
+member: cn=franco.sparacino@evolutiontravelnetwork.com,ou=Temporary,ou=Multi
+ agenzia,ou=Departments,dc=example,dc=com
+member: cn=betinagriggio,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
+ ple,dc=com
+member: cn=loris.zucchetti.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc
+ =example,dc=com
+member: cn=bookingusa,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+member: cn=antonioriolo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=mariamhached,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=soumayachebbi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
+ ple,dc=com
+member: cn=nicola.paci.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
+ mple,dc=com
+member: cn=caterina.rimoli.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc
+ =example,dc=com
+member: cn=manuela.aprile.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=
+ example,dc=com
+member: cn=roberta.baldassarri.to,ou=Temporary,ou=Multiagenzia,ou=Department
+ s,dc=example,dc=com
+member: cn=valentina.mazzatenta.to,ou=Temporary,ou=Multiagenzia,ou=Departmen
+ ts,dc=example,dc=com
+member: cn=giorgiadametto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
+ mple,dc=com
+member: cn=houdaouni,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+member: cn=intissarkrir,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=alessandrapressato,ou=Temporary,ou=Multiagenzia,ou=Departments,dc
+ =example,dc=com
+member: cn=cogitoadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exampl
+ e,dc=com
+member: cn=andrealagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=
+ example,dc=com
+member: cn=amelaidrizi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exampl
+ e,dc=com
+member: cn=lucabaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=
+ example,dc=com
+member: cn=qsoftadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+member: cn=testlead,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+member: cn=fatjonanamali,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
+ ple,dc=com
+member: cn=kejdabodlli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exampl
+ e,dc=com
+member: cn=guendalinavigorelli,ou=Temporary,ou=Multiagenzia,ou=Departments,d
+ c=example,dc=com
+member: cn=monicasergiano,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
+ mple,dc=com
+member: cn=etadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc
+ =com
+member: cn=stelasmajli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exampl
+ e,dc=com
+member: cn=lauralami,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+member: cn=booking,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc
+ =com
+member: cn=nicolavitale,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=lindagharsallah,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=ex
+ ample,dc=com
+member: cn=redazione,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+member: cn=g.trivigno,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+member: cn=ouaelbetbout,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=yosratoumi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
+ ,dc=com
+member: cn=rimtoumi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+member: cn=gerhaldabashli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
+ mple,dc=com
+member: cn=andreaguerra,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
+ le,dc=com
+member: cn=indifatapiranaj,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=ex
+ ample,dc=com
+member: cn=testuser,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+member: cn=alessandrobaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departmen
+ ts,dc=example,dc=com
+member: cn=angelapescarolo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=ex
+ ample,dc=com
+member: cn=marinagasparini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=ex
+ ample,dc=com
+member: cn=wafamejdi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+member: cn=amelmathlouthi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
+ mple,dc=com
+member: cn=francesco.schettini@evolutiontravelnetwork.com,ou=Temporary,ou=Mu
+ ltiagenzia,ou=Departments,dc=example,dc=com
+member: cn=kot test,ou=General,ou=Accounting,ou=Departments,dc=example,dc=co
+ m
+member: cn=kotkot,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=guest@guest.com,ou=Guests,ou=Marketing,ou=Departments,dc=example,
+ dc=com
+member: cn=qqqqqqqq,ou=Guests,ou=Marketing,ou=Departments,dc=example,dc=com
+member: cn=kuci.beqir@gmail.com,ou=Guests,ou=Marketing,ou=Departments,dc=exa
+ mple,dc=com
+member: cn=kotkot,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=kotnew,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=test1 test2,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=test12 test123,ou=Development,ou=IT,ou=Departments,dc=example,dc=
+ com
+member: cn=Dritan Xhelili,ou=Development,ou=IT,ou=Departments,dc=example,dc=
+ com
+member: cn=kotkot1,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=kotkot3,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=user test1,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=antonellagambato,ou=General,ou=Accounting,ou=Departments,dc=examp
+ le,dc=com
+member: cn=kotkot3,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc
+ =com
+member: cn=test10 test10,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
+ ple,dc=com
+member: cn=test11 test11,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
+ ple,dc=com
+member: cn=beqir2,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=beqir3,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=test 5 6,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
+ c=com
+member: cn=test6 updated,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+oauthTokenValidity: 60000
+refreshTokenValidity: 600000
+OauthGrantType: password, client_credentials, refresh_token
+oauthScope: read, write
+oauthClientSecret: secret
+cn: OAUTH_ROLE_USER
+objectClass: oauthClientIdentity
+objectClass: top
+description: Oauth client for public resources
+oauthClientIdentifier: client_foo
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:18880
+#!DATE 2018-01-09T14:34:40.216
+dn: cn=OAUTH_TEST,ou=Oauth,dc=example,dc=com
+member: cn=System,ou=System,ou=IT,ou=Departments,dc=example,dc=com
+oauthTokenValidity: 600
+OauthGrantType: password, refresh_token
+oauthClientSecret: new_secret
+cn: OAUTH_TEST
+objectclass: oauthClientIdentity
+objectclass: top
+description: desc updated
+oauthClientIdentifier: client_test
+

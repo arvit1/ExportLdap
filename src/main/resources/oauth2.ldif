@@ -1,0 +1,176 @@
+version: 1
+dn: cn=oauth2,ou=schema
+objectclass: metaSchema
+objectclass: top
+cn: oauth2
+m-dependencies: core
+m-dependencies: system
+
+dn: ou=attributetypes,cn=oauth2,ou=schema
+objectclass: organizationalUnit
+objectclass: top
+ou: attributetypes
+
+dn: ou=syntaxes,cn=oauth2,ou=schema
+objectclass: organizationalUnit
+objectclass: top
+ou: syntaxes
+
+dn: ou=matchingruleuse,cn=oauth2,ou=schema
+objectclass: organizationalUnit
+objectclass: top
+ou: matchingruleuse
+
+dn: ou=objectclasses,cn=oauth2,ou=schema
+objectclass: organizationalUnit
+objectclass: top
+ou: objectClasses
+
+dn: ou=matchingrules,cn=oauth2,ou=schema
+objectclass: organizationalUnit
+objectclass: top
+ou: matchingrules
+
+dn: ou=syntaxcheckers,cn=oauth2,ou=schema
+objectclass: organizationalUnit
+objectclass: top
+ou: syntaxcheckers
+
+dn: m-oid=1.3.6.1.4.1.40805.1.1.8,ou=attributetypes,cn=oauth2,ou=schema
+objectclass: metaAttributeType
+objectclass: top
+objectclass: metaTop
+m-oid: 1.3.6.1.4.1.40805.1.1.8
+m-description: The Primary Key in a sql table
+m-equality: integerMatch
+m-name: primaryKey
+m-ordering: integerOrderingMatch
+m-singlevalue: TRUE
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.27
+
+dn: m-oid=1.3.6.1.4.1.40805.1.1.109,ou=attributetypes,cn=oauth2,ou=schema
+objectclass: metaAttributeType
+objectclass: top
+objectclass: metaTop
+m-oid: 1.3.6.1.4.1.40805.1.1.109
+m-description: OAuth 2.0 grant type
+m-equality: caseExactMatch
+m-name: oauthGrantType
+m-ordering: caseExactOrderingMatch
+m-substr: caseExactSubstringsMatch
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+
+dn: m-oid=1.3.6.1.4.1.40805.1.1.5,ou=attributetypes,cn=oauth2,ou=schema
+objectclass: metaAttributeType
+objectclass: top
+objectclass: metaTop
+m-oid: 1.3.6.1.4.1.40805.1.1.5
+m-description: Client registration access token validity
+m-equality: caseExactMatch
+m-name: oauthTokenValidity
+m-ordering: caseExactOrderingMatch
+m-singlevalue: TRUE
+m-substr: caseExactSubstringsMatch
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+
+dn: m-oid=1.3.6.1.4.1.40805.1.1.106,ou=attributetypes,cn=oauth2,ou=schema
+objectclass: metaAttributeType
+objectclass: top
+objectclass: metaTop
+m-oid: 1.3.6.1.4.1.40805.1.1.106
+m-description: OAuth 2.0 refresh token validity
+m-equality: caseExactMatch
+m-name: refreshTokenValidity
+m-ordering: caseExactOrderingMatch
+m-singlevalue: TRUE
+m-substr: caseExactSubstringsMatch
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+
+dn: m-oid=1.3.6.1.4.1.40805.1.1.108,ou=attributetypes,cn=oauth2,ou=schema
+objectclass: metaAttributeType
+objectclass: top
+objectclass: metaTop
+m-oid: 1.3.6.1.4.1.40805.1.1.108
+m-description: OAuth 2.0 scope value
+m-equality: caseExactMatch
+m-name: oauthScope
+m-ordering: caseExactOrderingMatch
+m-substr: caseExactSubstringsMatch
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+
+dn: m-oid=1.3.6.1.4.1.40805.1.1.2,ou=attributetypes,cn=oauth2,ou=schema
+objectclass: metaAttributeType
+objectclass: top
+objectclass: metaTop
+m-oid: 1.3.6.1.4.1.40805.1.1.2
+m-description: Client secret
+m-equality: caseExactMatch
+m-name: oauthClientIdentifier
+m-ordering: caseExactOrderingMatch
+m-singlevalue: TRUE
+m-substr: caseExactSubstringsMatch
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+
+dn: m-oid=1.3.6.1.4.1.40805.1.1.3,ou=attributetypes,cn=oauth2,ou=schema
+objectclass: metaAttributeType
+objectclass: top
+objectclass: metaTop
+m-oid: 1.3.6.1.4.1.40805.1.1.3
+m-description: Client secret
+m-equality: caseExactMatch
+m-name: oauthClientSecret
+m-ordering: caseExactOrderingMatch
+m-singlevalue: TRUE
+m-substr: caseExactSubstringsMatch
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+
+dn: m-oid=1.3.6.1.4.1.40805.1.1.7,ou=attributetypes,cn=oauth2,ou=schema
+objectclass: metaAttributeType
+objectclass: top
+objectclass: metaTop
+m-oid: 1.3.6.1.4.1.40805.1.1.7
+m-description: User enabled or not
+m-equality: booleanMatch
+m-name: enabled
+m-ordering: booleanMatch
+m-singlevalue: TRUE
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.7
+
+dn: m-oid=1.3.6.1.4.1.40805.1.2.2,ou=objectclasses,cn=oauth2,ou=schema
+objectclass: top
+objectclass: metaObjectClass
+objectclass: metaTop
+m-oid: 1.3.6.1.4.1.40805.1.2.2
+m-description: object class just to enable/disable user
+m-must: enabled
+m-name: enabledUser
+m-typeobjectclass: AUXILIARY
+
+dn: m-oid=1.3.6.1.4.1.40805.1.2.1,ou=objectclasses,cn=oauth2,ou=schema
+objectclass: top
+objectclass: metaObjectClass
+objectclass: metaTop
+m-oid: 1.3.6.1.4.1.40805.1.2.1
+m-description: OAuth 2.0 client identity
+m-may: oauthClientIdentifier
+m-may: oauthClientSecret
+m-may: oauthGrantType
+m-may: oauthScope
+m-may: oauthTokenValidity
+m-may: description
+m-may: refreshTokenValidity
+m-must: cn
+m-must: member
+m-name: oauthClientIdentity
+m-supobjectclass: top
+
+dn: m-oid=1.3.6.1.4.1.40805.1.2.3,ou=objectclasses,cn=oauth2,ou=schema
+objectclass: top
+objectclass: metaObjectClass
+objectclass: metaTop
+m-oid: 1.3.6.1.4.1.40805.1.2.3
+m-description: Auxiliary objectclass that holds the primaryKey attribute wit
+ h the sql database
+m-may: primaryKey
+m-name: primaryKeyObject
+m-typeobjectclass: AUXILIARY
