@@ -21,7 +21,7 @@ public class ExportLdap2 {
         c.connect("172.24.1.17", 389);
         BindResult bindResult = c.bind("uid=admin,ou=system", "secret");
         sortedSearch("dc=example,dc=com","objectClass=*", c, new String[] {"*"}, "backup.ldif");
-        sortedSearch("ou=schema,cn=oauth2","objectClass=*", c, new String[] {"*"}, "oauth2.ldif");
+        sortedSearch("cn=oauth2,ou=schema","objectClass=*", c, new String[] {"*"}, "oauth2.ldif");
     }
 
     public static void sortedSearch(String baseDN, String filter, LDAPConnection connection, String[] attributes, String fileName) throws LDAPException, IOException {
@@ -32,7 +32,7 @@ public class ExportLdap2 {
         Iterator<Entry> iterator = sortedEntries.iterator();
 
         Charset charset = Charset.forName("UTF-8");
-        Path filePath = Paths.get("src/main/resources", "backup.ldif");
+        Path filePath = Paths.get("src/main/resources", fileName);
         BufferedWriter writer = Files.newBufferedWriter(filePath, charset);
         StringBuilder st = new StringBuilder();
 

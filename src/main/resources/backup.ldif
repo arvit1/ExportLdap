@@ -82,6 +82,38 @@ enabled: TRUE
 title: Chief Financial Officer
 userPassword: {SHA}5en6G6MezRroT3XKqkdPOmY/BfQ=
 
+dn: cn=dd,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+mail: beqir.kuci@y
+telephoneNumber: 0600000000
+givenName: user
+sn: test112
+cn: dd
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+title: Bb
+userPassword: 12
+postalAddress: Invalid
+
+dn: cn=fff,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+mail: beqir.kuci@y
+telephoneNumber: 0600000000
+givenName: fff
+sn: fff
+cn: fff
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+title: Bb
+userPassword: 11
+postalAddress: Invalid
+
 dn: cn=kotkot,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 mail: test@test@tt
 givenName: kot
@@ -183,6 +215,22 @@ enabled: false
 title: test3
 userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
 
+dn: cn=Test11 Test11,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+mail: asdfasf@test.com
+telephoneNumber: +23413412343
+givenName: Test11
+sn: Test11
+cn: Test11 Test11
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+title: Test11
+userPassword: {MD5}vBHwavubJwcGc0caI+zGqQ==
+postalAddress: Invalid
+
 dn: cn=test12 test123,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 mail: test12@test12.com
 telephoneNumber: +2342424333
@@ -233,6 +281,21 @@ title: user for test
 userPassword: {SSHA}t36JPtmO3IX+vnCaM5qr7newDn9awJqdysmn/Q==
 postalAddress: Invalid
 
+dn: cn=utente123,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+mail: beqir.kuci@y
+telephoneNumber: 123456
+givenName: utente123
+sn: utente123
+cn: utente123
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: false
+title: test222
+userPassword: utente123
+
 dn: ou=Information Services,ou=IT,ou=Departments,dc=example,dc=com
 ou: Information Services
 objectclass: top
@@ -256,6 +319,37 @@ objectclass: person
 objectclass: organizationalPerson
 enabled: false
 title: ggg
+
+dn: cn=ggg,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+mail: beqir.kuci@y
+telephoneNumber: 0600000000
+givenName: ggg
+sn: ggg
+cn: ggg
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+title: Bbb
+userPassword: 122
+postalAddress: Invalid
+
+dn: cn=test11 test11,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+mail: beqir.kuci@y
+telephoneNumber: 1233
+givenName: testutente
+sn: testutente
+cn: test11 test11
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: false
+title: Bootstrap Table Example
+userPassword: test
 
 dn: cn=test6 updated,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
 mail: test@test
@@ -293,20 +387,21 @@ ou: System
 objectclass: top
 objectclass: organizationalUnit
 
-dn: cn=Andrea Lagomarsini,ou=System,ou=IT,ou=Departments,dc=example,dc=com
-mail: andrea.lagomarsini@gmail.com
-employeeNumber: 5
-telephoneNumber: +39 340-123456
-givenName: Andrea
-sn: Lagomarsini
-cn: Andrea Lagomarsini
+dn: cn=beqir kuci,ou=System,ou=IT,ou=Departments,dc=example,dc=com
+mail: beqir.kuci@y
+telephoneNumber: 0600000000
+givenName: Beqir
+sn: Kuci1
+cn: beqir kuci
 objectclass: enabledUser
 objectclass: top
 objectclass: inetOrgPerson
 objectclass: person
 objectclass: organizationalPerson
-enabled: TRUE
-title: Chief Technical Officer
+enabled: true
+title: Ber
+userPassword: 123456
+postalAddress: Invalid
 
 dn: ou=Marketing,ou=Departments,dc=example,dc=com
 ou: Marketing
@@ -447,6 +542,20 @@ enabled: true
 title: Users from Multiagenzia
 userPassword: {MD5}M91JEF8mOjHsT5NG0rrElg==
 postalAddress: Invalid
+
+dn: cn=Andrea Lagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+mail: andrea.lagomarsini@gmail.com
+telephoneNumber: +39 340-123456
+givenName: Andrea
+sn: Lagomarsini
+cn: Andrea Lagomarsini
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: false
+title: Chief Technical Officer
 
 dn: cn=andreaguerra,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
 mail: andreaguerra
@@ -1697,11 +1806,20 @@ ou: Groups
 objectclass: top
 objectclass: organizationalUnit
 
+dn: cn=NEW_GROUP,ou=Groups,dc=example,dc=com
+cn: NEW_GROUP
+objectclass: top
+objectclass: groupOfNames
+member: cn=System,ou=System,ou=IT,ou=Departments,dc=example,dc=com
+description: A new group
+
 dn: cn=POWER_USER,ou=Groups,dc=example,dc=com
-member: cn=Carlo Rossi,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
-member: cn=Arvit Varfaj,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
-member: cn=Andrea Lagomarsini,ou=System,ou=IT,ou=Departments,dc=example,dc=com
 member: cn=Angelo Neri,ou=Promoters,ou=Marketing,ou=Departments,dc=example,dc=com
+member: cn=alessandrobaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+member: cn=katiuscia.tonello@gmail.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+member: cn=redazione,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+member: cn=beqir3,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=Andrea Lagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
 cn: POWER_USER
 objectclass: top
 objectclass: groupOfNames
@@ -1723,8 +1841,8 @@ description: Super Users
 
 dn: cn=ROLE_SUPER_ADMIN,ou=Groups,dc=example,dc=com
 member: cn=System,ou=System,ou=IT,ou=Departments,dc=example,dc=com
-cn: TEST2
-cn: role_super_admin
+member: cn=alessandrobaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+cn: ROLE_SUPER_ADMIN
 objectclass: top
 objectclass: groupOfNames
 description: Super admin roles, including user role administration
@@ -1733,9 +1851,6 @@ dn: cn=ROLE_USER,ou=Groups,dc=example,dc=com
 cn: ROLE_USER
 objectclass: top
 objectclass: groupOfNames
-member: cn=Arvit Varfaj,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
-member: cn=Andrea Lagomarsini,ou=System,ou=IT,ou=Departments,dc=example,dc=com
-member: cn=Ema Sena,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 member: cn=Carlo Rossi,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 member: cn=Angela Bruni,ou=Promoters,ou=Marketing,ou=Departments,dc=example,dc=com
 member: cn=Angelo Neri,ou=Promoters,ou=Marketing,ou=Departments,dc=example,dc=com
@@ -1837,6 +1952,15 @@ member: cn=beqir2,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 member: cn=beqir3,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 member: cn=test 5 6,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
 member: cn=test6 updated,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Test11 Test11,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=dd,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=fff,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=ggg,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=beqir kuci,ou=System,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Andrea Lagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+member: cn=beqir3,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+member: cn=test11 test11,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=utente123,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 description: Ordinary Users
 
 dn: cn=TestGroup_Beqir_01,ou=Groups,dc=example,dc=com
@@ -1844,6 +1968,10 @@ cn: TestGroup_Beqir_01
 objectclass: top
 objectclass: groupOfNames
 member: cn=System,ou=System,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=beqir3,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=alessandrobaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+member: cn=beqir2,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=kuci.beqir@gmail.com,ou=Guests,ou=Marketing,ou=Departments,dc=example,dc=com
 description:: dGVzdCBieSBCZXFpciA=
 
 dn: ou=Oauth,dc=example,dc=com
@@ -1867,7 +1995,6 @@ description: Oauth Client for promoters
 oauthClientIdentifier: oauth_client_promotors
 
 dn: cn=OAUTH_ROLE_USER,ou=Oauth,dc=example,dc=com
-member: cn=Andrea Lagomarsini,ou=System,ou=IT,ou=Departments,dc=example,dc=com
 member: cn=Angelo Neri,ou=Promoters,ou=Marketing,ou=Departments,dc=example,dc=com
 member: cn=Ema Sena,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 member: cn=dianabashota,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
@@ -1971,6 +2098,15 @@ member: cn=beqir2,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 member: cn=beqir3,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 member: cn=test 5 6,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
 member: cn=test6 updated,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Test11 Test11,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=dd,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=fff,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=ggg,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=beqir kuci,ou=System,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Andrea Lagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+member: cn=beqir3,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
+member: cn=test11 test11,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=utente123,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 oauthTokenValidity: 60000
 refreshTokenValidity: 600000
 OauthGrantType: password, client_credentials, refresh_token
