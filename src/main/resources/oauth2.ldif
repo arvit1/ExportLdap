@@ -10,7 +10,18 @@ ou: attributetypes
 objectclass: top
 objectclass: organizationalUnit
 
-dn: m-oid=1.3.6.1.4.1.40805.1.1.106,ou=attributetypes,cn=oauth2,ou=schema
+dn: m-oid=1.3.6.1.4.1.51452.1.1.10,ou=attributetypes,cn=oauth2,ou=schema
+m-description: Etherum wallet
+m-oid: 1.3.6.1.4.1.51452.1.1.10
+objectclass: metaTop
+objectclass: top
+objectclass: metaAttributeType
+m-name: walletETH
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+m-singlevalue: TRUE
+m-equality: caseExactMatch
+
+dn: m-oid=1.3.6.1.4.1.51452.1.1.106,ou=attributetypes,cn=oauth2,ou=schema
 m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
 m-singlevalue: TRUE
 m-ordering: caseExactOrderingMatch
@@ -20,10 +31,10 @@ m-description: OAuth 2.0 refresh token validity
 objectclass: metaTop
 objectclass: top
 objectclass: metaAttributeType
-m-oid: 1.3.6.1.4.1.40805.1.1.106
+m-oid: 1.3.6.1.4.1.51452.1.1.106
 m-name: refreshTokenValidity
 
-dn: m-oid=1.3.6.1.4.1.40805.1.1.108,ou=attributetypes,cn=oauth2,ou=schema
+dn: m-oid=1.3.6.1.4.1.51452.1.1.108,ou=attributetypes,cn=oauth2,ou=schema
 m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
 m-ordering: caseExactOrderingMatch
 m-substr: caseExactSubstringsMatch
@@ -32,10 +43,10 @@ m-description: OAuth 2.0 scope value
 objectclass: metaTop
 objectclass: top
 objectclass: metaAttributeType
-m-oid: 1.3.6.1.4.1.40805.1.1.108
+m-oid: 1.3.6.1.4.1.51452.1.1.108
 m-name: oauthScope
 
-dn: m-oid=1.3.6.1.4.1.40805.1.1.109,ou=attributetypes,cn=oauth2,ou=schema
+dn: m-oid=1.3.6.1.4.1.51452.1.1.109,ou=attributetypes,cn=oauth2,ou=schema
 m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
 m-ordering: caseExactOrderingMatch
 m-substr: caseExactSubstringsMatch
@@ -44,10 +55,10 @@ m-description: OAuth 2.0 grant type
 objectclass: metaTop
 objectclass: top
 objectclass: metaAttributeType
-m-oid: 1.3.6.1.4.1.40805.1.1.109
+m-oid: 1.3.6.1.4.1.51452.1.1.109
 m-name: oauthGrantType
 
-dn: m-oid=1.3.6.1.4.1.40805.1.1.2,ou=attributetypes,cn=oauth2,ou=schema
+dn: m-oid=1.3.6.1.4.1.51452.1.1.2,ou=attributetypes,cn=oauth2,ou=schema
 m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
 m-singlevalue: TRUE
 m-ordering: caseExactOrderingMatch
@@ -57,10 +68,10 @@ m-description: Client secret
 objectclass: metaTop
 objectclass: top
 objectclass: metaAttributeType
-m-oid: 1.3.6.1.4.1.40805.1.1.2
+m-oid: 1.3.6.1.4.1.51452.1.1.2
 m-name: oauthClientIdentifier
 
-dn: m-oid=1.3.6.1.4.1.40805.1.1.3,ou=attributetypes,cn=oauth2,ou=schema
+dn: m-oid=1.3.6.1.4.1.51452.1.1.3,ou=attributetypes,cn=oauth2,ou=schema
 m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
 m-singlevalue: TRUE
 m-ordering: caseExactOrderingMatch
@@ -70,10 +81,10 @@ m-description: Client secret
 objectclass: metaTop
 objectclass: top
 objectclass: metaAttributeType
-m-oid: 1.3.6.1.4.1.40805.1.1.3
+m-oid: 1.3.6.1.4.1.51452.1.1.3
 m-name: oauthClientSecret
 
-dn: m-oid=1.3.6.1.4.1.40805.1.1.5,ou=attributetypes,cn=oauth2,ou=schema
+dn: m-oid=1.3.6.1.4.1.51452.1.1.5,ou=attributetypes,cn=oauth2,ou=schema
 m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
 m-singlevalue: TRUE
 m-ordering: caseExactOrderingMatch
@@ -83,10 +94,10 @@ m-description: Client registration access token validity
 objectclass: metaTop
 objectclass: top
 objectclass: metaAttributeType
-m-oid: 1.3.6.1.4.1.40805.1.1.5
+m-oid: 1.3.6.1.4.1.51452.1.1.5
 m-name: oauthTokenValidity
 
-dn: m-oid=1.3.6.1.4.1.40805.1.1.7,ou=attributetypes,cn=oauth2,ou=schema
+dn: m-oid=1.3.6.1.4.1.51452.1.1.7,ou=attributetypes,cn=oauth2,ou=schema
 m-syntax: 1.3.6.1.4.1.1466.115.121.1.7
 m-singlevalue: TRUE
 m-ordering: booleanMatch
@@ -95,20 +106,42 @@ m-description: User enabled or not
 objectclass: metaTop
 objectclass: top
 objectclass: metaAttributeType
-m-oid: 1.3.6.1.4.1.40805.1.1.7
+m-oid: 1.3.6.1.4.1.51452.1.1.7
 m-name: enabled
 
-dn: m-oid=1.3.6.1.4.1.40805.1.1.8,ou=attributetypes,cn=oauth2,ou=schema
+dn: m-oid=1.3.6.1.4.1.51452.1.1.8,ou=attributetypes,cn=oauth2,ou=schema
 m-syntax: 1.3.6.1.4.1.1466.115.121.1.27
 m-singlevalue: TRUE
 m-ordering: integerOrderingMatch
 m-equality: integerMatch
 m-description: The Primary Key in a sql table
-m-oid: 1.3.6.1.4.1.40805.1.1.8
+m-oid: 1.3.6.1.4.1.51452.1.1.8
 objectclass: metaTop
 objectclass: top
 objectclass: metaAttributeType
 m-name: primaryKey
+
+dn: m-oid=1.3.6.1.4.1.51452.1.1.9,ou=attributetypes,cn=oauth2,ou=schema
+m-description: Bitcoin wallet
+m-oid: 1.3.6.1.4.1.51452.1.1.9
+objectclass: metaTop
+objectclass: top
+objectclass: metaAttributeType
+m-name: walletBTC
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+m-singlevalue: TRUE
+m-equality: caseExactMatch
+
+dn: m-oid=1.3.6.1.4.1.51452.1.1.11,ou=attributetypes,cn=oauth2,ou=schema
+m-description: Primary UUID
+m-oid: 1.3.6.1.4.1.51452.1.1.11
+objectclass: metaTop
+objectclass: top
+objectclass: metaAttributeType
+m-name: primaryUuid
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+m-singlevalue: TRUE
+m-equality: caseExactMatch
 
 dn: ou=matchingrules,cn=oauth2,ou=schema
 ou: matchingrules
@@ -125,7 +158,7 @@ ou: objectClasses
 objectclass: top
 objectclass: organizationalUnit
 
-dn: m-oid=1.3.6.1.4.1.40805.1.2.1,ou=objectclasses,cn=oauth2,ou=schema
+dn: m-oid=1.3.6.1.4.1.51452.1.2.1,ou=objectclasses,cn=oauth2,ou=schema
 m-may: oauthClientIdentifier
 m-may: oauthClientSecret
 m-may: oauthGrantType
@@ -137,27 +170,30 @@ m-supobjectclass: top
 m-must: cn
 m-must: member
 m-description: OAuth 2.0 client identity
-m-oid: 1.3.6.1.4.1.40805.1.2.1
+m-oid: 1.3.6.1.4.1.51452.1.2.1
 objectclass: metaTop
 objectclass: metaObjectClass
 objectclass: top
 m-name: oauthClientIdentity
 
-dn: m-oid=1.3.6.1.4.1.40805.1.2.2,ou=objectclasses,cn=oauth2,ou=schema
+dn: m-oid=1.3.6.1.4.1.51452.1.2.2,ou=objectclasses,cn=oauth2,ou=schema
 m-typeobjectclass: AUXILIARY
 m-must: enabled
 m-description: object class just to enable/disable user
-m-oid: 1.3.6.1.4.1.40805.1.2.2
+m-oid: 1.3.6.1.4.1.51452.1.2.2
 objectclass: metaTop
 objectclass: metaObjectClass
 objectclass: top
 m-name: enabledUser
 
-dn: m-oid=1.3.6.1.4.1.40805.1.2.3,ou=objectclasses,cn=oauth2,ou=schema
+dn: m-oid=1.3.6.1.4.1.51452.1.2.3,ou=objectclasses,cn=oauth2,ou=schema
 m-may: primaryKey
+m-may: primaryUuid
+m-may: walletBTC
+m-may: walletETH
 m-typeobjectclass: AUXILIARY
 m-description: Auxiliary objectclass that holds the primaryKey attribute with the sql database
-m-oid: 1.3.6.1.4.1.40805.1.2.3
+m-oid: 1.3.6.1.4.1.51452.1.2.3
 objectclass: metaTop
 objectclass: metaObjectClass
 objectclass: top

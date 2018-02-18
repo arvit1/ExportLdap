@@ -1,38 +1,55 @@
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:34.097
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:14.452
 dn: dc=example,dc=com
 dc: example
 objectclass: domain
 objectclass: top
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:35.494
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:15.421
 dn: ou=Departments,dc=example,dc=com
 ou: Departments
 objectclass: top
 objectclass: organizationalUnit
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:36.414
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:16.386
 dn: ou=Accounting,ou=Departments,dc=example,dc=com
 ou: Accounting
 objectclass: top
 objectclass: organizationalUnit
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:37.376
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:17.287
 dn: ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 ou: General
 objectclass: top
 objectclass: organizationalUnit
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:38.671
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:18.076
+dn: cn=Ada Kreci,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+mail: ada@gg1
+telephoneNumber: 0600000000
+givenName: ada
+sn: Kreci
+cn: Ada Kreci
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+title: ggg
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:18.876
 dn: cn=antonellagambato,ou=General,ou=Accounting,ou=Departments,dc=example,d
  c=com
 mail: beqir.kuci@y
@@ -51,8 +68,8 @@ userPassword: {SSHA}+3kDDoghR8UAPU+dMyFDJZ+rfzCUfPMnL/K5JQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:39.277
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:19.688
 dn: cn=beqir2,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 mail: beqir.kuci@y
 telephoneNumber: 0600000000
@@ -70,8 +87,8 @@ userPassword: {SSHA}ugyl93U6XtjZiDs9KreQ/tullZbJd63KM+us0Q==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:39.972
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:20.509
 dn: cn=beqir3,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 mail: beqir.kuci@y
 telephoneNumber: 0600000000
@@ -89,8 +106,8 @@ userPassword: {SSHA}liUpZhyZ6pBOLzBnFkAh3DMuPyx05juGqM9ToQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:41.821
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:21.465
 dn: cn=Carlo Rossi,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 mail: carlo.rossi@gmail.com
 employeeNumber: 1
@@ -108,8 +125,63 @@ title: Chief Financial Officer
 userPassword: {SHA}5en6G6MezRroT3XKqkdPOmY/BfQ=
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:42.592
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:22.298
+dn: cn=dd,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+mail: beqir.kuci@y
+telephoneNumber: 0600000000
+givenName: user
+sn: test112
+cn: dd
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+title: Bb
+userPassword: 12
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:23.230
+dn: cn=fff,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+mail: beqir.kuci@y
+telephoneNumber: 0600000000
+givenName: fff
+sn: fff
+cn: fff
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+title: Bb
+userPassword: 11
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:23.977
+dn: cn=kotko,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+mail: test@test@tt
+givenName: kot
+sn: test
+cn: kotko
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+userPassword: password
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:24.886
 dn: cn=kotkot,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 mail: test@test@tt
 givenName: kot
@@ -126,8 +198,8 @@ userPassword: {SSHA}uMfRJqY7u8jR5kJkQniiRuhyQbbUlD7650mDWA==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:43.306
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:25.698
 dn: cn=kotkot1,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 mail: test@test@tt
 givenName: kot
@@ -143,24 +215,42 @@ userPassword: {SSHA}MXbKOqQ9cFxfb6d91KxcePrlUYTmvq1lgqm9FQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:44.134
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:26.644
 dn: ou=IT,ou=Departments,dc=example,dc=com
 ou: IT
 objectclass: top
 objectclass: organizationalUnit
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:45.243
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:27.620
 dn: ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 ou: Development
 objectclass: top
 objectclass: organizationalUnit
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:46.182
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:28.563
+dn: cn=Ada Kreci,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+mail: test2@test1.com
+telephoneNumber: +423542354325222
+givenName: name4
+sn: new4
+cn: Ada Kreci
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+title: test3
+userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:29.535
 dn: cn=Arvit Varfaj,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 mail: avarfaj86@gmail.com
 employeeNumber: 3
@@ -173,13 +263,15 @@ objectclass: top
 objectclass: inetOrgPerson
 objectclass: person
 objectclass: organizationalPerson
+objectclass: primaryKeyObject
 enabled: TRUE
+primaryUuid: 2a3d300a-d2aa-495a-889d-d9c515746a03
 title: Programmer
 userPassword: {MD5}SWRFE/Vl/unGyz5zctSyJA==
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:46.970
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:30.343
 dn: cn=Dritan Xhelili,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 mail: tanxhelili@gmail.com
 telephoneNumber: +5423452345235
@@ -196,8 +288,8 @@ title: Developer
 userPassword: {MD5}vBHwavubJwcGc0caI+zGqQ==
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:47.725
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:31.210
 dn: cn=Ema Sena,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 mail: eme.sena@gmail.com
 employeeNumber: 4
@@ -215,26 +307,27 @@ title: Developer
 userPassword: {MD5}SWRFE/Vl/unGyz5zctSyJA==
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:48.920
-dn: cn=test1 test2,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
-mail: test2@test1.com
-telephoneNumber: +423542354325222
-givenName: test1
-sn: `test2
-cn: test1 test2
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:32.076
+dn: cn=Test11 Test11,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+mail: asdfasf@test.com
+telephoneNumber: +23413412343
+givenName: Test11
+sn: Test11
+cn: Test11 Test11
 objectclass: enabledUser
 objectclass: top
 objectclass: inetOrgPerson
 objectclass: person
 objectclass: organizationalPerson
-enabled: false
-title: test3
-userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+enabled: true
+title: Test11
+userPassword: {MD5}vBHwavubJwcGc0caI+zGqQ==
+postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:49.542
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:32.921
 dn: cn=test12 test123,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 mail: test12@test12.com
 telephoneNumber: +2342424333
@@ -251,8 +344,8 @@ title: test1234567
 userPassword: {MD5}vBHwavubJwcGc0caI+zGqQ==
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:50.223
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:33.865
 dn: cn=test9 test9,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 mail: test9@test9.com
 telephoneNumber: +523452342
@@ -270,8 +363,8 @@ userPassword: {MD5}vBHwavubJwcGc0caI+zGqQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:51.375
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:34.687
 dn: cn=user test1,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 mail: beqir.kuci@y
 telephoneNumber: 0600000000
@@ -286,47 +379,85 @@ objectclass: organizationalPerson
 objectclass: primaryKeyObject
 primaryKey: 51864861
 enabled: true
-labeledURI: sdjbfuwe-wgnwignw-wergwm
+primaryUuid: sdjbfuwe-wgnwignw-wergwm
 title: user for test
 userPassword: {SSHA}t36JPtmO3IX+vnCaM5qr7newDn9awJqdysmn/Q==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:52.169
-dn: ou=Information Services,ou=IT,ou=Departments,dc=example,dc=com
-ou: Information Services
-objectclass: top
-objectclass: organizationalUnit
-
-#!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:53.098
-dn: ou=Support,ou=IT,ou=Departments,dc=example,dc=com
-ou: Support
-objectclass: top
-objectclass: organizationalUnit
-
-#!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:53.762
-dn: cn=Ada Kreci,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
-mail: ada@gg
-telephoneNumber: 0600000000
-givenName: ada
-sn: Kreci
-cn: Ada Kreci
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:35.555
+dn: cn=utente123,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+mail: beqir.kuci@y
+telephoneNumber: 123456
+givenName: utente123
+sn: utente123
+cn: utente123
 objectclass: enabledUser
 objectclass: top
 objectclass: inetOrgPerson
 objectclass: person
 objectclass: organizationalPerson
 enabled: false
-title: ggg
+title: test222
+userPassword: utente123
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:54.833
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:36.520
+dn: ou=Information Services,ou=IT,ou=Departments,dc=example,dc=com
+ou: Information Services
+objectclass: top
+objectclass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:37.499
+dn: ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+ou: Support
+objectclass: top
+objectclass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:38.386
+dn: cn=ggg,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+mail: beqir.kuci@y
+telephoneNumber: 0600000000
+givenName: ggg
+sn: ggg
+cn: ggg
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+title: Bbb
+userPassword: 122
+postalAddress: Invalid
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:39.288
+dn: cn=test11 test11,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+mail: beqir.kuci@y
+telephoneNumber: 1233
+givenName: testutente
+sn: testutente
+cn: test11 test11
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: false
+title: Bootstrap Table Example
+userPassword: test
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:40.355
 dn: cn=test6 updated,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
 mail: test@test
 telephoneNumber: 0600000000
@@ -343,8 +474,8 @@ title: ggg
 userPassword: 123
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:55.603
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:41.210
 dn: cn=test8 test8,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
 mail: test8@test8.com
 telephoneNumber: +2345234525
@@ -362,50 +493,51 @@ userPassword: {MD5}vBHwavubJwcGc0caI+zGqQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:56.523
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:42.320
 dn: ou=System,ou=IT,ou=Departments,dc=example,dc=com
 ou: System
 objectclass: top
 objectclass: organizationalUnit
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:57.274
-dn: cn=Andrea Lagomarsini,ou=System,ou=IT,ou=Departments,dc=example,dc=com
-mail: andrea.lagomarsini@gmail.com
-employeeNumber: 5
-telephoneNumber: +39 340-123456
-givenName: Andrea
-sn: Lagomarsini
-cn: Andrea Lagomarsini
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:43.197
+dn: cn=beqir kuci,ou=System,ou=IT,ou=Departments,dc=example,dc=com
+mail: beqir.kuci@y
+telephoneNumber: 0600000000
+givenName: Beqir
+sn: Kuci1
+cn: beqir kuci
 objectclass: enabledUser
 objectclass: top
 objectclass: inetOrgPerson
 objectclass: person
 objectclass: organizationalPerson
-enabled: TRUE
-title: Chief Technical Officer
+enabled: true
+title: Ber
+userPassword: 123456
+postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:58.152
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:44.165
 dn: ou=Marketing,ou=Departments,dc=example,dc=com
 ou: Marketing
 objectclass: top
 objectclass: organizationalUnit
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:59.095
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:45.176
 dn: ou=Guests,ou=Marketing,ou=Departments,dc=example,dc=com
 ou: Guests
 objectClass: top
 objectClass: organizationalUnit
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:32:59.837
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:46.052
 dn: cn=kuci.beqir@gmail.com,ou=Guests,ou=Marketing,ou=Departments,dc=example
  ,dc=com
 mail: kuci.beqir@gmail.com
@@ -424,16 +556,16 @@ userPassword: {SSHA}f0SrtoecL01TLhZPoAR/Ix3emr8S0mRKGXCLjA==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:00.650
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:47.076
 dn: ou=Promoters,ou=Marketing,ou=Departments,dc=example,dc=com
 ou: Promoters
 objectClass: top
 objectClass: organizationalUnit
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:01.479
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:47.977
 dn: cn=Angela Bruni,ou=Promoters,ou=Marketing,ou=Departments,dc=example,dc=c
  om
 mail: angela.bruni@gmail.com
@@ -451,8 +583,8 @@ enabled: TRUE
 title: Promotor
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:02.137
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:48.941
 dn: cn=Angelo Neri,ou=Promoters,ou=Marketing,ou=Departments,dc=example,dc=co
  m
 mail: angelo.nero@gmail.com
@@ -470,32 +602,32 @@ enabled: TRUE
 title: Promotor
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:03.082
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:49.831
 dn: ou=Sales,ou=Marketing,ou=Departments,dc=example,dc=com
 ou: Sales
 objectClass: top
 objectClass: organizationalUnit
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:04.010
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:50.740
 dn: ou=Multiagenzia,ou=Departments,dc=example,dc=com
 ou: Multiagenzia
 objectClass: top
 objectClass: organizationalUnit
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:05.064
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:51.711
 dn: ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
 ou: Temporary
 objectClass: top
 objectClass: organizationalUnit
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:05.879
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:52.645
 dn: cn=alessandrapressato,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
  mple,dc=com
 mail: alessandrapressato
@@ -514,8 +646,8 @@ userPassword: {MD5}PvDJX4IANXeQYfG7OlBolA==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:06.992
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:53.489
 dn: cn=alessandrobaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departments,d
  c=example,dc=com
 mail: alessandrobaldisserotto
@@ -534,8 +666,8 @@ userPassword: {MD5}Atk7i4Fyt8sCURX3ltbGfA==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:07.687
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:54.376
 dn: cn=amelaidrizi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc
  =com
 mail: amelaidrizi
@@ -554,8 +686,8 @@ userPassword: {MD5}35TAz5Buv+b9jr2hMpAP/A==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:08.541
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:55.311
 dn: cn=amelmathlouthi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
  ,dc=com
 mail: amelmathlouthi
@@ -574,11 +706,11 @@ userPassword: {MD5}M91JEF8mOjHsT5NG0rrElg==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:09.373
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:56.475
 dn: cn=andreaguerra,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
  c=com
-mail: andreaguerra
+mail: andreaguerra@evolutiontravel.com
 telephoneNumber: +000 00-000000
 givenName: Andrea
 sn: Guerra
@@ -590,12 +722,12 @@ objectclass: person
 objectclass: inetOrgPerson
 enabled: true
 title: Users from Multiagenzia
-userPassword: {MD5}x4s/zsu9bmvia+914B6ZbQ==
+userPassword: {MD5}4QrcOUm6Wau+VuBX8g+IPg==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:10.208
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:57.365
 dn: cn=andrealagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
  ple,dc=com
 mail: andrea.lagomarsini@evolutiontravel.com
@@ -610,12 +742,12 @@ objectclass: person
 objectclass: inetOrgPerson
 enabled: true
 title: Users from Multiagenzia
-userPassword: {MD5}KPcZyJ738zzi4XhJBna1qw==
+userPassword: {MD5}HEL5wcovZUQUZbQ82TOdbA==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:10.913
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:58.209
 dn: cn=angelapescarolo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exampl
  e,dc=com
 mail: angelapescarolo
@@ -634,8 +766,8 @@ userPassword: {MD5}wHZh9ZCswYfAO3dfusTIMQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:11.800
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:59.087
 dn: cn=antonioriolo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
  c=com
 mail: antonioriolo
@@ -654,8 +786,8 @@ userPassword: {MD5}XPSzU/T/kTFSHX6YZPkqfQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:12.655
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:21:59.961
 dn: cn=ariannabertin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
  dc=com
 mail: ariannabertin
@@ -674,8 +806,8 @@ userPassword: {MD5}T57nyo1JfFO2zvrW9UuU1g==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:13.466
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:00.742
 dn: cn=barbara.cuccarolo.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=e
  xample,dc=com
 mail: barbara.cuccarolo.to
@@ -694,8 +826,8 @@ userPassword: {MD5}vrIyDwCuy7Q3qxQVbK7zOA==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:14.262
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:01.587
 dn: cn=betinagriggio,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
  dc=com
 mail: betinagriggio
@@ -714,8 +846,8 @@ userPassword: {MD5}Iu5N/ClXuTz+Kk/3o4LSBA==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:15.067
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:02.476
 dn: cn=booking,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
 mail: booking
 telephoneNumber: +000 00-000000
@@ -733,8 +865,8 @@ userPassword: {MD5}xdJEVQzZULmnp/93jnsMEw==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:15.872
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:03.314
 dn: cn=booking.de,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=
  com
 mail: booking.de
@@ -753,8 +885,8 @@ userPassword: {MD5}fkkClGEaZ/s2I4V36ie2oQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:16.718
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:04.221
 dn: cn=bookingusa,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=
  com
 mail: bookingusa
@@ -773,8 +905,8 @@ userPassword: {MD5}765vSefGepMP9K08244/jw==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:17.418
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:05.177
 dn: cn=bruno.bottaro.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=examp
  le,dc=com
 mail: bruno.bottaro.to
@@ -793,8 +925,8 @@ userPassword: {MD5}cruqU7Mpazgh5SJej36TJw==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:18.239
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:05.999
 dn: cn=canton,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
 mail: canton
 telephoneNumber: +000 00-000000
@@ -812,8 +944,8 @@ userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:19.339
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:06.932
 dn: cn=carlofalzone,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
  c=com
 mail: carlofalzone
@@ -832,8 +964,8 @@ userPassword: {MD5}mebaCMYUiu3eLeQHvhc1Ig==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:20.006
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:08.032
 dn: cn=caterina.rimoli.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
  mple,dc=com
 mail: caterina.rimoli.to
@@ -852,8 +984,8 @@ userPassword: {MD5}9Ti3orV5REU4n1Py1UVWUg==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:21.026
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:08.833
 dn: cn=chinello,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=co
  m
 mail: chinello
@@ -872,8 +1004,8 @@ userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:21.873
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:09.776
 dn: cn=cogitoadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc
  =com
 mail: cogitoadmin
@@ -892,8 +1024,8 @@ userPassword: {MD5}V5EC1S9JiQg3Be/HMeqG8g==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:23.100
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:10.608
 dn: cn=dianabashota,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
  c=com
 mail: dianabashota
@@ -912,8 +1044,8 @@ userPassword: {MD5}SWRFE/Vl/unGyz5zctSyJA==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:23.862
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:11.398
 dn: cn=elisa.magarotto@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenz
  ia,ou=Departments,dc=example,dc=com
 mail: elisa.magarotto@evolutiontravelnetwork.com
@@ -932,8 +1064,8 @@ userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:24.684
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:12.403
 dn: cn=essesolutions,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
  dc=com
 mail: essesolutions
@@ -952,8 +1084,8 @@ userPassword: {MD5}26HmJP0o9Svc7OApfPAtKw==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:25.473
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:13.300
 dn: cn=etadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
 mail: etadmin
 telephoneNumber: +000 00-000000
@@ -971,8 +1103,8 @@ userPassword: {MD5}Nq1lmDe3NnU/EpMj2nLvKA==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:26.293
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:14.257
 dn: cn=etnpagamenti,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
  c=com
 mail: etnpagamenti
@@ -991,8 +1123,8 @@ userPassword: {MD5}O6QaL58kdV4b+eP4MLZvKQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:27.238
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:15.131
 dn: cn=eugenabashli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
  c=com
 mail: eugenabashli
@@ -1011,8 +1143,8 @@ userPassword: {MD5}P2mUAcUHtnFmUf8RvqLOtg==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:27.977
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:16.076
 dn: cn=fatjonanamali,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
  dc=com
 mail: fatjonanamali
@@ -1031,8 +1163,8 @@ userPassword: {MD5}Yaz8XUNLhX/GURi6bqEQQg==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:28.783
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:16.949
 dn: cn=francesco.schettini@evolutiontravelnetwork.com,ou=Temporary,ou=Multia
  genzia,ou=Departments,dc=example,dc=com
 mail: francesco.schettini@evolutiontravelnetwork.com
@@ -1051,8 +1183,8 @@ userPassword: {MD5}zrgX5OanomC9wSeTBru+SQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:29.579
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:17.854
 dn: cn=franco.sparacino@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagen
  zia,ou=Departments,dc=example,dc=com
 mail: franco.sparacino@evolutiontravelnetwork.com
@@ -1071,8 +1203,8 @@ userPassword: {MD5}1B2M2Y8AsgTpgAmY7PhCfg==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:30.355
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:18.879
 dn: cn=g.trivigno,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=
  com
 mail: g.trivigno
@@ -1091,8 +1223,8 @@ userPassword: {MD5}6YSRlRPUAoD9MQ/1oxvuiA==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:31.118
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:19.800
 dn: cn=gerhaldabashli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
  ,dc=com
 mail: gerhaldabashli
@@ -1111,8 +1243,8 @@ userPassword: {MD5}uHAmJsVDJDZrNkdRRCQdpQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:32.005
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:20.654
 dn: cn=giorgiadametto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
  ,dc=com
 mail: giorgiadametto
@@ -1131,8 +1263,8 @@ userPassword: {MD5}3UARfE6F+PC6Q66O4CggyA==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:33.038
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:21.599
 dn: cn=guendalinavigorelli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=ex
  ample,dc=com
 mail: guendalinavigorelli
@@ -1151,8 +1283,8 @@ userPassword: {MD5}CAsPS9I9m1muLTCZD2SfyQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:34.884
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:22.513
 dn: cn=houdaouni,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=c
  om
 mail: houdaouni
@@ -1171,8 +1303,8 @@ userPassword: {MD5}xhLctE697j+Hn9b9LM25sg==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:35.703
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:23.398
 dn: cn=ilircopja,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=c
  om
 mail: ilircopja
@@ -1191,8 +1323,8 @@ userPassword: {MD5}Vm6DmqWsZBEd0Sc3onFtDw==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:36.718
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:24.232
 dn: cn=indifatapiranaj,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exampl
  e,dc=com
 mail: indifatapiranaj
@@ -1211,8 +1343,8 @@ userPassword: {MD5}RjlvR4060wBVzZDI1H0cAA==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:37.472
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:25.087
 dn: cn=intissarkrir,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
  c=com
 mail: intissarkrir
@@ -1231,8 +1363,8 @@ userPassword: {MD5}DtXB4zdpnPnYTG0w2ozuTg==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:38.202
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:25.954
 dn: cn=karim.taher@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,o
  u=Departments,dc=example,dc=com
 mail: karim.taher@evolutiontravelnetwork.com
@@ -1251,8 +1383,8 @@ userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:38.956
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:26.887
 dn: cn=katiuscia.tonello@gmail.com,ou=Temporary,ou=Multiagenzia,ou=Departmen
  ts,dc=example,dc=com
 mail: katiuscia.tonello@gmail.com
@@ -1271,8 +1403,8 @@ userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:39.728
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:27.999
 dn: cn=kejdabodlli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc
  =com
 mail: kejdabodlli
@@ -1291,8 +1423,8 @@ userPassword: {MD5}35JYX4B9tPb9nWA+4fWApg==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:40.703
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:29.169
 dn: cn=kotkot3,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
 mail: test@tes
 telephoneNumber: 0600000000
@@ -1309,8 +1441,8 @@ title: gg
 userPassword: {SSHA}Wwxu5XLnDOaSSTARcJx3mEvmn/kPLfQ/SqQzRw==
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:41.500
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:30.154
 dn: cn=lauralami,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=c
  om
 mail: lauralami
@@ -1329,8 +1461,8 @@ userPassword: {MD5}eoZ3gqExA9bW5pc5hBig/A==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:42.554
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:31.113
 dn: cn=lindagharsallah,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exampl
  e,dc=com
 mail: lindagharsallah
@@ -1349,8 +1481,8 @@ userPassword: {MD5}mz4AgkrgrbRbLPOhlYcUzg==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:43.856
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:32.136
 dn: cn=lisa.favaro@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,o
  u=Departments,dc=example,dc=com
 mail: lisa.favaro@evolutiontravelnetwork.com
@@ -1369,8 +1501,8 @@ userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:45.464
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:33.030
 dn: cn=loris.zucchetti.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
  mple,dc=com
 mail: loris.zucchetti.to
@@ -1389,8 +1521,8 @@ userPassword: {MD5}9badpLR8mQyqrdDysO+Y2Q==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:47.043
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:33.964
 dn: cn=lucabaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
  ple,dc=com
 mail: luca.baldisserotto@evolutiontravel.com
@@ -1409,8 +1541,8 @@ userPassword: {MD5}o8u+Vhxm2XuDX2gCLs0VbA==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:48.704
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:34.844
 dn: cn=luciadaccico,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
  c=com
 mail: luciadaccico
@@ -1429,8 +1561,8 @@ userPassword: {MD5}h1TzSAkqeTzJQhMAFa9Myg==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:50.114
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:35.698
 dn: cn=manuel.bisson@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia
  ,ou=Departments,dc=example,dc=com
 mail: manuel.bisson@evolutiontravelnetwork.com
@@ -1449,8 +1581,8 @@ userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:51.951
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:36.543
 dn: cn=manuela.aprile.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exam
  ple,dc=com
 mail: manuela.aprile.to
@@ -1469,8 +1601,8 @@ userPassword: {MD5}8IRQ+59/OUcP6lh6H0gpQQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:53.379
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:37.366
 dn: cn=marcosparacino,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
  ,dc=com
 mail: marcosparacino
@@ -1489,8 +1621,8 @@ userPassword: {MD5}03gEJX2gEt1hYRqFtYgk5w==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:54.699
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:38.208
 dn: cn=mariachiaramarsella,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=ex
  ample,dc=com
 mail: mariachiaramarsella
@@ -1509,8 +1641,8 @@ userPassword: {MD5}IKczmmBOEbI0WN7ZBN/vaw==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:55.952
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:39.209
 dn: cn=mariamhached,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
  c=com
 mail: mariamhached
@@ -1529,8 +1661,8 @@ userPassword: {MD5}8IYa8jlaD5Xy823I4GYsXA==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:57.424
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:40.076
 dn: cn=marinagasparini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exampl
  e,dc=com
 mail: marinagasparini
@@ -1549,8 +1681,8 @@ userPassword: {MD5}vH6AiTyzf7CaNMRz/tk7vg==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:33:58.805
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:40.899
 dn: cn=melchionda,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=
  com
 mail: melchionda
@@ -1569,8 +1701,8 @@ userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:00.372
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:41.686
 dn: cn=mioaradragomir,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
  ,dc=com
 mail: mioaradragomir
@@ -1589,8 +1721,8 @@ userPassword: {MD5}XQ4goMzsNgz/prKLtCox8g==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:01.959
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:42.566
 dn: cn=monicasergiano,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
  ,dc=com
 mail: monicasergiano
@@ -1609,8 +1741,8 @@ userPassword: {MD5}tRzoa6dBDJ+IVzpUre22gA==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:03.419
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:43.444
 dn: cn=morelo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
 mail: morelo
 telephoneNumber: +000 00-000000
@@ -1628,8 +1760,8 @@ userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:04.855
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:44.341
 dn: cn=nicola.paci.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
  ,dc=com
 mail: nicola.paci.to
@@ -1648,8 +1780,8 @@ userPassword: {MD5}jGoSqTkOx1kKZyalop+kyA==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:05.710
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:45.520
 dn: cn=nicolavitale,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
  c=com
 mail: nicolavitale
@@ -1668,8 +1800,8 @@ userPassword: {MD5}yIoi0FNuewuAQtqho9L0Aw==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:06.532
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:46.407
 dn: cn=ouaelbetbout,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
  c=com
 mail: ouaelbetbout
@@ -1688,8 +1820,8 @@ userPassword: {MD5}/kHXMH0zfTpKdxhnUtS2TQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:07.345
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:47.302
 dn: cn=pavan.elisa@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,o
  u=Departments,dc=example,dc=com
 mail: pavan.elisa@evolutiontravelnetwork.com
@@ -1708,8 +1840,8 @@ userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:08.083
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:48.245
 dn: cn=ptotest,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
 mail: ptotest
 telephoneNumber: +000 00-000000
@@ -1727,8 +1859,8 @@ userPassword: {MD5}wK3Y0L7tbkFkehJAQWrYSg==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:08.866
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:49.210
 dn: cn=qsoftadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=
  com
 mail: qsoftadmin
@@ -1747,8 +1879,8 @@ userPassword: {MD5}5Vgwh4ldmmw/1OdDXXf97w==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:09.755
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:50.122
 dn: cn=redazione,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=c
  om
 mail: redazione
@@ -1767,8 +1899,8 @@ userPassword: {MD5}XMmWtoOHEcI8hr4MeAvmgg==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:10.593
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:51.044
 dn: cn=rimtoumi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=co
  m
 mail: rimtoumi
@@ -1787,8 +1919,8 @@ userPassword: {MD5}wMLROpO+ZIN/VFdVGDJlIQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:11.396
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:51.998
 dn: cn=roberta.baldassarri.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc
  =example,dc=com
 mail: roberta.baldassarri.to
@@ -1807,8 +1939,8 @@ userPassword: {MD5}5jElZ8HFq5iuI7CJcV2ZfQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:12.415
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:52.966
 dn: cn=simone,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
 mail: simone.pegoraro@evolutiontravelnetwork.com
 telephoneNumber: +000 00-000000
@@ -1826,8 +1958,8 @@ userPassword: {MD5}SWRFE/Vl/unGyz5zctSyJA==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:13.158
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:53.854
 dn: cn=soumayachebbi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
  dc=com
 mail: soumayachebbi
@@ -1846,8 +1978,8 @@ userPassword: {MD5}h+Bt0IFPRH7mN/4oFAECew==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:14.549
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:54.812
 dn: cn=stelasmajli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc
  =com
 mail: stelasmajli
@@ -1866,8 +1998,8 @@ userPassword: {MD5}QWrdURkPydbLJs0V1E1zog==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:16.024
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:55.757
 dn: cn=tamara.magarotto.network@evolutiontravelnetwork.com,ou=Temporary,ou=M
  ultiagenzia,ou=Departments,dc=example,dc=com
 mail: tamara.magarotto.network@evolutiontravelnetwork.com
@@ -1886,8 +2018,8 @@ userPassword: {MD5}pgRvieg2IUvlYznUuRm5Pg==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:17.060
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:56.802
 dn: cn=test 5 6,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=co
  m
 mail: test11@test
@@ -1905,8 +2037,8 @@ title: Bootstrap Table Example
 userPassword: 12
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:18.174
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:57.764
 dn: cn=test10 test10,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
  dc=com
 mail: test10@test10.com
@@ -1924,8 +2056,8 @@ title: test1010
 userPassword: {MD5}vBHwavubJwcGc0caI+zGqQ==
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:19.021
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:58.698
 dn: cn=test11 test11,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
  dc=com
 mail: test11@test11.com
@@ -1943,8 +2075,8 @@ title: test11
 userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:19.903
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:22:59.753
 dn: cn=testlead,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=co
  m
 mail: testlead
@@ -1963,8 +2095,8 @@ userPassword: {MD5}CqXVMWc4kDFHXOch+axbZw==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:20.799
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:00.853
 dn: cn=testuser,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=co
  m
 mail: testuser
@@ -1983,8 +2115,8 @@ userPassword: {MD5}LZCPACSQcXIZqyznvKFPZQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:21.720
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:01.993
 dn: cn=valentina.mazzatenta.to,ou=Temporary,ou=Multiagenzia,ou=Departments,d
  c=example,dc=com
 mail: valentina.mazzatenta.to
@@ -2003,8 +2135,8 @@ userPassword: {MD5}AOYWnyn7GLiwBTJ+gniMvw==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:22.665
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:03.031
 dn: cn=veramarku,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=c
  om
 mail: veramarku
@@ -2023,8 +2155,8 @@ userPassword: {MD5}e4vIDjTQqnIg1pmsA8i4qQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:23.527
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:04.030
 dn: cn=wafamejdi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=c
  om
 mail: wafamejdi
@@ -2043,8 +2175,8 @@ userPassword: {MD5}WJ2z7iYiDMJfg+N+GgjTHg==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:24.614
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:04.919
 dn: cn=walter.quintavalle.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=
  example,dc=com
 mail: walter.quintavalle.to
@@ -2063,8 +2195,8 @@ userPassword: {MD5}xi0CKGRQLhOg1/m3qd0G8w==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:25.390
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:05.744
 dn: cn=wirecarduser,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
  c=com
 mail: wirecarduser
@@ -2083,8 +2215,8 @@ userPassword: {MD5}KfAE8oDJ3uT47Z7t24vfXg==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:26.493
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:06.699
 dn: cn=yosratoumi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=
  com
 mail: yosratoumi
@@ -2103,8 +2235,8 @@ userPassword: {MD5}svaej424+y52zw6zW6c1zw==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:27.499
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:07.532
 dn: cn=zevalos,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
 mail: zevalos
 telephoneNumber: +000 00-000000
@@ -2122,35 +2254,48 @@ userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
 postalAddress: Invalid
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:28.733
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:08.559
 dn: ou=Groups,dc=example,dc=com
 ou: Groups
 objectclass: top
 objectclass: organizationalUnit
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:29.954
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:09.432
+dn: cn=NEW_GROUP2,ou=Groups,dc=example,dc=com
+cn: NEW_GROUP2
+objectclass: top
+objectclass: groupOfNames
+member: cn=System,ou=System,ou=IT,ou=Departments,dc=example,dc=com
+description: A new group2
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:10.355
 dn: cn=POWER_USER,ou=Groups,dc=example,dc=com
-member: cn=Carlo Rossi,ou=General,ou=Accounting,ou=Departments,dc=example,dc
- =com
-member: cn=Arvit Varfaj,ou=Development,ou=IT,ou=Departments,dc=example,dc=co
- m
-member: cn=Andrea Lagomarsini,ou=System,ou=IT,ou=Departments,dc=example,dc=c
- om
 member: cn=Angelo Neri,ou=Promoters,ou=Marketing,ou=Departments,dc=example,d
  c=com
+member: cn=alessandrobaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departmen
+ ts,dc=example,dc=com
+member: cn=katiuscia.tonello@gmail.com,ou=Temporary,ou=Multiagenzia,ou=Depar
+ tments,dc=example,dc=com
+member: cn=redazione,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,
+ dc=com
+member: cn=beqir3,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=Andrea Lagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc
+ =example,dc=com
 cn: POWER_USER
 objectclass: top
 objectclass: groupOfNames
-objectclass: labeledURIObject
-labeledURI: 82$#%&^*)()(_)+
+objectclass: primaryKeyObject
+primaryUuid: 82$#%&^*)()(_)+
 description: Some More Privileges
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:30.927
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:11.222
 dn: cn=ROLE_ADMIN,ou=Groups,dc=example,dc=com
 cn: ROLE_ADMIN
 objectclass: top
@@ -2164,32 +2309,29 @@ member: cn=mioaradragomir,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
 member: cn=indifatapiranaj,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=ex
  ample,dc=com
 member: cn=Ema Sena,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
-member: cn=Ada Kreci,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Ada Kreci,ou=General,ou=Accounting,ou=Departments,dc=example,dc=c
+ om
 description: Super Users
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:32.490
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:12.055
 dn: cn=ROLE_SUPER_ADMIN,ou=Groups,dc=example,dc=com
 member: cn=System,ou=System,ou=IT,ou=Departments,dc=example,dc=com
-cn: TEST2
-cn: role_super_admin
+member: cn=alessandrobaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departmen
+ ts,dc=example,dc=com
+cn: ROLE_SUPER_ADMIN
 objectclass: top
 objectclass: groupOfNames
 description: Super admin roles, including user role administration
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:33.959
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:12.980
 dn: cn=ROLE_USER,ou=Groups,dc=example,dc=com
 cn: ROLE_USER
 objectclass: top
 objectclass: groupOfNames
-member: cn=Arvit Varfaj,ou=Development,ou=IT,ou=Departments,dc=example,dc=co
- m
-member: cn=Andrea Lagomarsini,ou=System,ou=IT,ou=Departments,dc=example,dc=c
- om
-member: cn=Ema Sena,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 member: cn=Carlo Rossi,ou=General,ou=Accounting,ou=Departments,dc=example,dc
  =com
 member: cn=Angela Bruni,ou=Promoters,ou=Marketing,ou=Departments,dc=example,
@@ -2356,7 +2498,6 @@ member: cn=guest@guest.com,ou=Guests,ou=Marketing,ou=Departments,dc=example,
  dc=com
 member: cn=kuci.beqir@gmail.com,ou=Guests,ou=Marketing,ou=Departments,dc=exa
  mple,dc=com
-member: cn=test1 test2,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 member: cn=test12 test123,ou=Development,ou=IT,ou=Departments,dc=example,dc=
  com
 member: cn=Dritan Xhelili,ou=Development,ou=IT,ou=Departments,dc=example,dc=
@@ -2381,34 +2522,55 @@ member: cn=beqir3,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 member: cn=test 5 6,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
  c=com
 member: cn=test6 updated,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Test11 Test11,ou=Development,ou=IT,ou=Departments,dc=example,dc=c
+ om
+member: cn=dd,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=fff,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=ggg,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=beqir kuci,ou=System,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Andrea Lagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc
+ =example,dc=com
+member: cn=beqir3,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=
+ com
+member: cn=test11 test11,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=utente123,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Ada Kreci,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=kotko,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 description: Ordinary Users
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:35.845
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:13.889
 dn: cn=TestGroup_Beqir_01,ou=Groups,dc=example,dc=com
 cn: TestGroup_Beqir_01
 objectclass: top
 objectclass: groupOfNames
 member: cn=System,ou=System,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=beqir3,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=alessandrobaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departmen
+ ts,dc=example,dc=com
+member: cn=beqir2,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=kuci.beqir@gmail.com,ou=Guests,ou=Marketing,ou=Departments,dc=exa
+ mple,dc=com
 description:: dGVzdCBieSBCZXFpciA=
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:37.396
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:14.943
 dn: ou=Oauth,dc=example,dc=com
 ou: Oauth
 objectclass: top
 objectclass: organizationalUnit
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:38.226
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:15.910
 dn: cn=OAUTH_ROLE_PROMOTORS,ou=Oauth,dc=example,dc=com
 member: cn=Ema Sena,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 member: cn=Angela Bruni,ou=Promoters,ou=Marketing,ou=Departments,dc=example,
  dc=com
-member: cn=Ada Kreci,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Ada Kreci,ou=General,ou=Accounting,ou=Departments,dc=example,dc=c
+ om
 oauthTokenValidity: 60000
 refreshTokenValidity: 60000
 OauthGrantType: password
@@ -2421,11 +2583,9 @@ description: Oauth Client for promoters
 oauthClientIdentifier: oauth_client_promotors
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:39.111
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:16.793
 dn: cn=OAUTH_ROLE_USER,ou=Oauth,dc=example,dc=com
-member: cn=Andrea Lagomarsini,ou=System,ou=IT,ou=Departments,dc=example,dc=c
- om
 member: cn=Angelo Neri,ou=Promoters,ou=Marketing,ou=Departments,dc=example,d
  c=com
 member: cn=Ema Sena,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
@@ -2599,7 +2759,6 @@ member: cn=kuci.beqir@gmail.com,ou=Guests,ou=Marketing,ou=Departments,dc=exa
  mple,dc=com
 member: cn=kotkot,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 member: cn=kotnew,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
-member: cn=test1 test2,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 member: cn=test12 test123,ou=Development,ou=IT,ou=Departments,dc=example,dc=
  com
 member: cn=Dritan Xhelili,ou=Development,ou=IT,ou=Departments,dc=example,dc=
@@ -2620,6 +2779,20 @@ member: cn=beqir3,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 member: cn=test 5 6,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,d
  c=com
 member: cn=test6 updated,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Test11 Test11,ou=Development,ou=IT,ou=Departments,dc=example,dc=c
+ om
+member: cn=dd,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=fff,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+member: cn=ggg,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=beqir kuci,ou=System,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Andrea Lagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc
+ =example,dc=com
+member: cn=beqir3,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=
+ com
+member: cn=test11 test11,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=utente123,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Ada Kreci,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=kotko,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 oauthTokenValidity: 60000
 refreshTokenValidity: 600000
 OauthGrantType: password, client_credentials, refresh_token
@@ -2632,8 +2805,8 @@ description: Oauth client for public resources
 oauthClientIdentifier: client_foo
 
 #!RESULT OK
-#!CONNECTION ldap://localhost:18880
-#!DATE 2018-01-09T14:34:40.216
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:23:17.776
 dn: cn=OAUTH_TEST,ou=Oauth,dc=example,dc=com
 member: cn=System,ou=System,ou=IT,ou=Departments,dc=example,dc=com
 oauthTokenValidity: 600

@@ -18,6 +18,20 @@ ou: General
 objectclass: top
 objectclass: organizationalUnit
 
+dn: cn=Ada Kreci,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+mail: ada@gg1
+telephoneNumber: 0600000000
+givenName: ada
+sn: Kreci
+cn: Ada Kreci
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+title: ggg
+
 dn: cn=antonellagambato,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 mail: beqir.kuci@y
 telephoneNumber: 0600000000
@@ -114,6 +128,20 @@ title: Bb
 userPassword: 11
 postalAddress: Invalid
 
+dn: cn=kotko,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
+mail: test@test@tt
+givenName: kot
+sn: test
+cn: kotko
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+userPassword: password
+postalAddress: Invalid
+
 dn: cn=kotkot,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 mail: test@test@tt
 givenName: kot
@@ -153,6 +181,21 @@ ou: Development
 objectclass: top
 objectclass: organizationalUnit
 
+dn: cn=Ada Kreci,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+mail: test2@test1.com
+telephoneNumber: +423542354325222
+givenName: name4
+sn: new4
+cn: Ada Kreci
+objectclass: enabledUser
+objectclass: top
+objectclass: inetOrgPerson
+objectclass: person
+objectclass: organizationalPerson
+enabled: true
+title: test3
+userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
+
 dn: cn=Arvit Varfaj,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 mail: avarfaj86@gmail.com
 employeeNumber: 3
@@ -165,7 +208,9 @@ objectclass: top
 objectclass: inetOrgPerson
 objectclass: person
 objectclass: organizationalPerson
+objectclass: primaryKeyObject
 enabled: TRUE
+primaryUuid: 2a3d300a-d2aa-495a-889d-d9c515746a03
 title: Programmer
 userPassword: {MD5}SWRFE/Vl/unGyz5zctSyJA==
 
@@ -199,21 +244,6 @@ objectclass: organizationalPerson
 enabled: TRUE
 title: Developer
 userPassword: {MD5}SWRFE/Vl/unGyz5zctSyJA==
-
-dn: cn=test1 test2,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
-mail: test2@test1.com
-telephoneNumber: +423542354325222
-givenName: test1
-sn: `test2
-cn: test1 test2
-objectclass: enabledUser
-objectclass: top
-objectclass: inetOrgPerson
-objectclass: person
-objectclass: organizationalPerson
-enabled: false
-title: test3
-userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
 
 dn: cn=Test11 Test11,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 mail: asdfasf@test.com
@@ -276,7 +306,7 @@ objectclass: organizationalPerson
 objectclass: primaryKeyObject
 primaryKey: 51864861
 enabled: true
-labeledURI: sdjbfuwe-wgnwignw-wergwm
+primaryUuid: sdjbfuwe-wgnwignw-wergwm
 title: user for test
 userPassword: {SSHA}t36JPtmO3IX+vnCaM5qr7newDn9awJqdysmn/Q==
 postalAddress: Invalid
@@ -305,20 +335,6 @@ dn: ou=Support,ou=IT,ou=Departments,dc=example,dc=com
 ou: Support
 objectclass: top
 objectclass: organizationalUnit
-
-dn: cn=Ada Kreci,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
-mail: ada@gg
-telephoneNumber: 0600000000
-givenName: ada
-sn: Kreci
-cn: Ada Kreci
-objectclass: enabledUser
-objectclass: top
-objectclass: inetOrgPerson
-objectclass: person
-objectclass: organizationalPerson
-enabled: false
-title: ggg
 
 dn: cn=ggg,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
 mail: beqir.kuci@y
@@ -543,22 +559,8 @@ title: Users from Multiagenzia
 userPassword: {MD5}M91JEF8mOjHsT5NG0rrElg==
 postalAddress: Invalid
 
-dn: cn=Andrea Lagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
-mail: andrea.lagomarsini@gmail.com
-telephoneNumber: +39 340-123456
-givenName: Andrea
-sn: Lagomarsini
-cn: Andrea Lagomarsini
-objectclass: enabledUser
-objectclass: top
-objectclass: inetOrgPerson
-objectclass: person
-objectclass: organizationalPerson
-enabled: false
-title: Chief Technical Officer
-
 dn: cn=andreaguerra,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
-mail: andreaguerra
+mail: andreaguerra@evolutiontravel.com
 telephoneNumber: +000 00-000000
 givenName: Andrea
 sn: Guerra
@@ -570,7 +572,7 @@ objectclass: person
 objectclass: inetOrgPerson
 enabled: true
 title: Users from Multiagenzia
-userPassword: {MD5}x4s/zsu9bmvia+914B6ZbQ==
+userPassword: {MD5}4QrcOUm6Wau+VuBX8g+IPg==
 postalAddress: Invalid
 
 dn: cn=andrealagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
@@ -586,7 +588,7 @@ objectclass: person
 objectclass: inetOrgPerson
 enabled: true
 title: Users from Multiagenzia
-userPassword: {MD5}KPcZyJ738zzi4XhJBna1qw==
+userPassword: {MD5}HEL5wcovZUQUZbQ82TOdbA==
 postalAddress: Invalid
 
 dn: cn=angelapescarolo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
@@ -1806,12 +1808,12 @@ ou: Groups
 objectclass: top
 objectclass: organizationalUnit
 
-dn: cn=NEW_GROUP,ou=Groups,dc=example,dc=com
-cn: NEW_GROUP
+dn: cn=NEW_GROUP2,ou=Groups,dc=example,dc=com
+cn: NEW_GROUP2
 objectclass: top
 objectclass: groupOfNames
 member: cn=System,ou=System,ou=IT,ou=Departments,dc=example,dc=com
-description: A new group
+description: A new group2
 
 dn: cn=POWER_USER,ou=Groups,dc=example,dc=com
 member: cn=Angelo Neri,ou=Promoters,ou=Marketing,ou=Departments,dc=example,dc=com
@@ -1823,8 +1825,8 @@ member: cn=Andrea Lagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
 cn: POWER_USER
 objectclass: top
 objectclass: groupOfNames
-objectclass: labeledURIObject
-labeledURI: 82$#%&^*)()(_)+
+objectclass: primaryKeyObject
+primaryUuid: 82$#%&^*)()(_)+
 description: Some More Privileges
 
 dn: cn=ROLE_ADMIN,ou=Groups,dc=example,dc=com
@@ -1836,7 +1838,7 @@ member: cn=Angela Bruni,ou=Promoters,ou=Marketing,ou=Departments,dc=example,dc=c
 member: cn=mioaradragomir,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
 member: cn=indifatapiranaj,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
 member: cn=Ema Sena,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
-member: cn=Ada Kreci,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Ada Kreci,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 description: Super Users
 
 dn: cn=ROLE_SUPER_ADMIN,ou=Groups,dc=example,dc=com
@@ -1934,7 +1936,6 @@ member: cn=amelmathlouthi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example
 member: cn=francesco.schettini@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
 member: cn=guest@guest.com,ou=Guests,ou=Marketing,ou=Departments,dc=example,dc=com
 member: cn=kuci.beqir@gmail.com,ou=Guests,ou=Marketing,ou=Departments,dc=example,dc=com
-member: cn=test1 test2,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 member: cn=test12 test123,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 member: cn=Dritan Xhelili,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 member: cn=qqqqqqqq,ou=Guests,ou=Marketing,ou=Departments,dc=example,dc=com
@@ -1961,6 +1962,8 @@ member: cn=Andrea Lagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
 member: cn=beqir3,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
 member: cn=test11 test11,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
 member: cn=utente123,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Ada Kreci,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=kotko,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 description: Ordinary Users
 
 dn: cn=TestGroup_Beqir_01,ou=Groups,dc=example,dc=com
@@ -1982,7 +1985,7 @@ objectclass: organizationalUnit
 dn: cn=OAUTH_ROLE_PROMOTORS,ou=Oauth,dc=example,dc=com
 member: cn=Ema Sena,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 member: cn=Angela Bruni,ou=Promoters,ou=Marketing,ou=Departments,dc=example,dc=com
-member: cn=Ada Kreci,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Ada Kreci,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 oauthTokenValidity: 60000
 refreshTokenValidity: 60000
 OauthGrantType: password
@@ -2084,7 +2087,6 @@ member: cn=qqqqqqqq,ou=Guests,ou=Marketing,ou=Departments,dc=example,dc=com
 member: cn=kuci.beqir@gmail.com,ou=Guests,ou=Marketing,ou=Departments,dc=example,dc=com
 member: cn=kotkot,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 member: cn=kotnew,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
-member: cn=test1 test2,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 member: cn=test12 test123,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 member: cn=Dritan Xhelili,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
 member: cn=kotkot1,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
@@ -2107,6 +2109,8 @@ member: cn=Andrea Lagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=exa
 member: cn=beqir3,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=example,dc=com
 member: cn=test11 test11,ou=Support,ou=IT,ou=Departments,dc=example,dc=com
 member: cn=utente123,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=Ada Kreci,ou=Development,ou=IT,ou=Departments,dc=example,dc=com
+member: cn=kotko,ou=General,ou=Accounting,ou=Departments,dc=example,dc=com
 oauthTokenValidity: 60000
 refreshTokenValidity: 600000
 OauthGrantType: password, client_credentials, refresh_token

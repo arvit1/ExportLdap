@@ -1,0 +1,275 @@
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:29.816
+dn: cn=oauth2,ou=schema
+m-dependencies: core
+m-dependencies: system
+cn: oauth2
+objectclass: top
+objectclass: metaSchema
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:29.829
+dn: ou=attributetypes,cn=oauth2,ou=schema
+ou: attributetypes
+objectclass: top
+objectclass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:29.870
+dn: m-oid=1.3.6.1.4.1.51452.1.1.10,ou=attributetypes,cn=oauth2,ou=schema
+m-description: Etherum wallet
+m-oid: 1.3.6.1.4.1.51452.1.1.10
+objectclass: metaTop
+objectclass: top
+objectclass: metaAttributeType
+m-name: walletETH
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+m-singlevalue: TRUE
+m-equality: caseExactMatch
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:29.903
+dn: m-oid=1.3.6.1.4.1.51452.1.1.106,ou=attributetypes,cn=oauth2,ou=schema
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+m-singlevalue: TRUE
+m-ordering: caseExactOrderingMatch
+m-substr: caseExactSubstringsMatch
+m-equality: caseExactMatch
+m-description: OAuth 2.0 refresh token validity
+objectclass: metaTop
+objectclass: top
+objectclass: metaAttributeType
+m-oid: 1.3.6.1.4.1.51452.1.1.106
+m-name: refreshTokenValidity
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:29.952
+dn: m-oid=1.3.6.1.4.1.51452.1.1.108,ou=attributetypes,cn=oauth2,ou=schema
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+m-ordering: caseExactOrderingMatch
+m-substr: caseExactSubstringsMatch
+m-equality: caseExactMatch
+m-description: OAuth 2.0 scope value
+objectclass: metaTop
+objectclass: top
+objectclass: metaAttributeType
+m-oid: 1.3.6.1.4.1.51452.1.1.108
+m-name: oauthScope
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:30.015
+dn: m-oid=1.3.6.1.4.1.51452.1.1.109,ou=attributetypes,cn=oauth2,ou=schema
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+m-ordering: caseExactOrderingMatch
+m-substr: caseExactSubstringsMatch
+m-equality: caseExactMatch
+m-description: OAuth 2.0 grant type
+objectclass: metaTop
+objectclass: top
+objectclass: metaAttributeType
+m-oid: 1.3.6.1.4.1.51452.1.1.109
+m-name: oauthGrantType
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:30.094
+dn: m-oid=1.3.6.1.4.1.51452.1.1.2,ou=attributetypes,cn=oauth2,ou=schema
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+m-singlevalue: TRUE
+m-ordering: caseExactOrderingMatch
+m-substr: caseExactSubstringsMatch
+m-equality: caseExactMatch
+m-description: Client secret
+objectclass: metaTop
+objectclass: top
+objectclass: metaAttributeType
+m-oid: 1.3.6.1.4.1.51452.1.1.2
+m-name: oauthClientIdentifier
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:30.124
+dn: m-oid=1.3.6.1.4.1.51452.1.1.3,ou=attributetypes,cn=oauth2,ou=schema
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+m-singlevalue: TRUE
+m-ordering: caseExactOrderingMatch
+m-substr: caseExactSubstringsMatch
+m-equality: caseExactMatch
+m-description: Client secret
+objectclass: metaTop
+objectclass: top
+objectclass: metaAttributeType
+m-oid: 1.3.6.1.4.1.51452.1.1.3
+m-name: oauthClientSecret
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:30.166
+dn: m-oid=1.3.6.1.4.1.51452.1.1.5,ou=attributetypes,cn=oauth2,ou=schema
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+m-singlevalue: TRUE
+m-ordering: caseExactOrderingMatch
+m-substr: caseExactSubstringsMatch
+m-equality: caseExactMatch
+m-description: Client registration access token validity
+objectclass: metaTop
+objectclass: top
+objectclass: metaAttributeType
+m-oid: 1.3.6.1.4.1.51452.1.1.5
+m-name: oauthTokenValidity
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:30.195
+dn: m-oid=1.3.6.1.4.1.51452.1.1.7,ou=attributetypes,cn=oauth2,ou=schema
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.7
+m-singlevalue: TRUE
+m-ordering: booleanMatch
+m-equality: booleanMatch
+m-description: User enabled or not
+objectclass: metaTop
+objectclass: top
+objectclass: metaAttributeType
+m-oid: 1.3.6.1.4.1.51452.1.1.7
+m-name: enabled
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:30.223
+dn: m-oid=1.3.6.1.4.1.51452.1.1.8,ou=attributetypes,cn=oauth2,ou=schema
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.27
+m-singlevalue: TRUE
+m-ordering: integerOrderingMatch
+m-equality: integerMatch
+m-description: The Primary Key in a sql table
+m-oid: 1.3.6.1.4.1.51452.1.1.8
+objectclass: metaTop
+objectclass: top
+objectclass: metaAttributeType
+m-name: primaryKey
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:30.252
+dn: m-oid=1.3.6.1.4.1.51452.1.1.9,ou=attributetypes,cn=oauth2,ou=schema
+m-description: Bitcoin wallet
+m-oid: 1.3.6.1.4.1.51452.1.1.9
+objectclass: metaTop
+objectclass: top
+objectclass: metaAttributeType
+m-name: walletBTC
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+m-singlevalue: TRUE
+m-equality: caseExactMatch
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:30.283
+dn: m-oid=1.3.6.1.4.1.51452.1.1.11,ou=attributetypes,cn=oauth2,ou=schema
+m-description: Primary UUID
+m-oid: 1.3.6.1.4.1.51452.1.1.11
+objectclass: metaTop
+objectclass: top
+objectclass: metaAttributeType
+m-name: primaryUuid
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+m-singlevalue: TRUE
+m-equality: caseExactMatch
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:30.297
+dn: ou=matchingrules,cn=oauth2,ou=schema
+ou: matchingrules
+objectclass: top
+objectclass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:30.313
+dn: ou=matchingruleuse,cn=oauth2,ou=schema
+ou: matchingruleuse
+objectclass: top
+objectclass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:30.327
+dn: ou=objectclasses,cn=oauth2,ou=schema
+ou: objectClasses
+objectclass: top
+objectclass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:30.353
+dn: m-oid=1.3.6.1.4.1.51452.1.2.1,ou=objectclasses,cn=oauth2,ou=schema
+m-may: oauthClientIdentifier
+m-may: oauthClientSecret
+m-may: oauthGrantType
+m-may: oauthScope
+m-may: oauthTokenValidity
+m-may: description
+m-may: refreshTokenValidity
+m-supobjectclass: top
+m-must: cn
+m-must: member
+m-description: OAuth 2.0 client identity
+m-oid: 1.3.6.1.4.1.51452.1.2.1
+objectclass: metaTop
+objectclass: metaObjectClass
+objectclass: top
+m-name: oauthClientIdentity
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:30.378
+dn: m-oid=1.3.6.1.4.1.51452.1.2.2,ou=objectclasses,cn=oauth2,ou=schema
+m-typeobjectclass: AUXILIARY
+m-must: enabled
+m-description: object class just to enable/disable user
+m-oid: 1.3.6.1.4.1.51452.1.2.2
+objectclass: metaTop
+objectclass: metaObjectClass
+objectclass: top
+m-name: enabledUser
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:30.410
+dn: m-oid=1.3.6.1.4.1.51452.1.2.3,ou=objectclasses,cn=oauth2,ou=schema
+m-may: primaryKey
+m-may: primaryUuid
+m-may: walletBTC
+m-may: walletETH
+m-typeobjectclass: AUXILIARY
+m-description: Auxiliary objectclass that holds the primaryKey attribute wit
+ h the sql database
+m-oid: 1.3.6.1.4.1.51452.1.2.3
+objectclass: metaTop
+objectclass: metaObjectClass
+objectclass: top
+m-name: primaryKeyObject
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:30.422
+dn: ou=syntaxcheckers,cn=oauth2,ou=schema
+ou: syntaxcheckers
+objectclass: top
+objectclass: organizationalUnit
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2018-02-18T19:20:30.434
+dn: ou=syntaxes,cn=oauth2,ou=schema
+ou: syntaxes
+objectclass: top
+objectclass: organizationalUnit
+

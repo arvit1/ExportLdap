@@ -10,7 +10,9 @@
     <name>A custom project using myfaces</name>
     <url>http://www.myorganization.org</url>
 
-
+    <properties>
+        <exec.mainClass>com.etn.ExportLdap2</exec.mainClass>
+    </properties>
 
     <!-- Project dependencies -->
     <dependencies>
@@ -22,15 +24,25 @@
         <dependency>
             <groupId>com.unboundid</groupId>
             <artifactId>unboundid-ldapsdk</artifactId>
-            <version>4.0.3</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.unboundid</groupId>
-            <artifactId>unboundid-ldapsdk</artifactId>
             <version>3.2.1</version>
         </dependency>
     </dependencies>
 
-
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.etn.ExportLdap2</mainClass>
+                        </manifest>
+                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
