@@ -1,13 +1,24 @@
 package com.etn;
 
-import com.unboundid.ldap.sdk.*;
+import com.unboundid.ldap.sdk.Entry;
+import com.unboundid.ldap.sdk.EntrySorter;
+import com.unboundid.ldap.sdk.LDAPConnection;
+import com.unboundid.ldap.sdk.LDAPException;
+import com.unboundid.ldap.sdk.SearchRequest;
+import com.unboundid.ldap.sdk.SearchResult;
+import com.unboundid.ldap.sdk.SearchScope;
+import com.unboundid.util.ssl.SSLUtil;
+import com.unboundid.util.ssl.TrustAllTrustManager;
 
+import javax.net.SocketFactory;
+import javax.net.ssl.TrustManager;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.security.GeneralSecurityException;
 import java.util.Iterator;
 import java.util.SortedSet;
 
@@ -17,11 +28,28 @@ import java.util.SortedSet;
 public class ExportLdap2 {
     static int i = 0;
     public static void main(String[] args) throws LDAPException, IOException {
-        LDAPConnection c = new LDAPConnection();
-        c.connect("172.24.1.17", 389);
-        BindResult bindResult = c.bind("uid=admin,ou=system", "secret");
-        sortedSearch("dc=example,dc=com","objectClass=*", c, new String[] {"*"}, "backup.ldif");
-        sortedSearch("cn=oauth2,ou=schema","objectClass=*", c, new String[] {"*"}, "oauth2.ldif");
+        TrustManager[] trustManagers = new TrustManager[1];
+        trustManagers[0] = new TrustAllTrustManager();
+
+        LDAPConnection conn = null;
+
+
+        try {
+            SSLUtil sslUtil = new SSLUtil(trustManagers);
+            SocketFactory factory
+                    = sslUtil.createSSLSocketFactory();
+
+            conn = new LDAPConnection(factory, "172.24.1.17", 636);
+            conn.bind("cn=Manager,dc=etdirectory,dc=net", "$3v-3\\pIjD");
+
+            sortedSearch("dc=etdirectory,dc=net","objectClass=*", conn, new String[] {"*"}, "backup.ldif");
+            //sortedSearch("cn=oauth2,ou=schema","objectClass=*", conn, new String[] {"*"}, "oauth2.ldif");
+
+        } catch (LDAPException e) {
+            e.printStackTrace();
+        } catch (GeneralSecurityException e){
+            e.printStackTrace();
+        }
     }
 
     public static void sortedSearch(String baseDN, String filter, LDAPConnection connection, String[] attributes, String fileName) throws LDAPException, IOException {
