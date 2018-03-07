@@ -43,8 +43,7 @@ public class ExportLdap2 {
             conn.bind("cn=Manager,dc=etdirectory,dc=net", "$3v-3\\pIjD");
 
             sortedSearch("dc=etdirectory,dc=net","objectClass=*", conn, new String[] {"*"}, "backup.ldif");
-            //sortedSearch("cn=oauth2,ou=schema","objectClass=*", conn, new String[] {"*"}, "oauth2.ldif");
-
+            sortedSearch("cn=Subschema","objectClass=subschema", conn, new String[] {"attributeTypes", "dITStructureRules", "objectClasses", "nameForms", "dITContentRules", "matchingRules", "ldapSyntaxes", "matchingRuleUse"}, "oauth2.ldif");
         } catch (LDAPException e) {
             e.printStackTrace();
         } catch (GeneralSecurityException e){
