@@ -39,7 +39,7 @@ public class ExportLdap2 {
             SocketFactory factory
                     = sslUtil.createSSLSocketFactory();
 
-            conn = new LDAPConnection(factory, "172.24.1.17", 636);
+            conn = new LDAPConnection(factory, "aol.devel-etdirectory.net", 636);
             conn.bind("cn=Manager,dc=etdirectory,dc=net", "$3v-3\\pIjD");
 
             sortedSearch("dc=etdirectory,dc=net","objectClass=*", conn, new String[] {"*"}, "backup.ldif");
