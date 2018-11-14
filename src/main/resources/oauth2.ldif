@@ -4,72 +4,95 @@ objectClass: domain
 objectClass: top
 
 dn: ou=Departments,dc=etdirectory,dc=net
+ou: Departments
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Accounting,ou=Departments,dc=etdirectory,dc=net
+ou: Accounting
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
+ou: General
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Etraveller,ou=Departments,dc=etdirectory,dc=net
+ou: Etraveller
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Etravellers,ou=Etraveller,ou=Departments,dc=etdirectory,dc=net
+ou: Etravellers
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=IT,ou=Departments,dc=etdirectory,dc=net
+ou: IT
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
+ou: Development
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Information Services,ou=IT,ou=Departments,dc=etdirectory,dc=net
+ou: Information Services
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Support,ou=IT,ou=Departments,dc=etdirectory,dc=net
+ou: Support
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=System,ou=IT,ou=Departments,dc=etdirectory,dc=net
+ou: System
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Marketing,ou=Departments,dc=etdirectory,dc=net
+ou: Marketing
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Guests,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
+ou: Guests
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Promoters,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
+ou: Promoters
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Sales,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
+ou: Sales
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
+ou: Multiagenzia
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
+ou: Temporary
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Groups,dc=etdirectory,dc=net
+ou: Groups
 objectClass: top
 objectClass: organizationalUnit
+
+dn: cn=A test group,ou=Groups,dc=etdirectory,dc=net
+description: test description
+cn: A test group
+objectClass: groupOfNames
+objectClass: top
 
 dn: cn=Amministratore BI,ou=Groups,dc=etdirectory,dc=net
 description: Puo' accedere all'interfaccia web di Pentaho con privilegi amministrativi
@@ -282,6 +305,7 @@ objectClass: groupOfNames
 objectClass: top
 
 dn: ou=Oauth,dc=etdirectory,dc=net
+ou: Oauth
 objectClass: top
 objectClass: organizationalUnit
 
