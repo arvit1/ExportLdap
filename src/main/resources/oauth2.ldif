@@ -4,2197 +4,314 @@ objectClass: domain
 objectClass: top
 
 dn: ou=Departments,dc=etdirectory,dc=net
-ou: Departments
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-ou: Accounting
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-ou: General
 objectClass: top
 objectClass: organizationalUnit
 
-dn: cn=antonellagambato,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-mail: beqir.kuci@y
-telephoneNumber: 0600000000
-givenName: Antonella
-postalAddress: Invalid
-sn: Gambato
-cn: antonellagambato
-title: Users from Multiagenzia
-objectClass: enabledUser
+dn: ou=Etraveller,ou=Departments,dc=etdirectory,dc=net
 objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: TRUE
-employeeNumber: 0
-userPassword: {MD5}Fwrgky5YoBRIXqtBIukx6Q==
+objectClass: organizationalUnit
 
-dn: cn=beqir2,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-mail: beqir.kuci@y
-telephoneNumber: 0600000000
-givenName: Beqir2
-postalAddress: Invalid
-sn: bb
-cn: beqir2
-title: Bootstrap Table etdirectory
-objectClass: enabledUser
+dn: ou=Etravellers,ou=Etraveller,ou=Departments,dc=etdirectory,dc=net
 objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: TRUE
-userPassword: {SSHA}ugyl93U6XtjZiDs9KreQ/tullZbJd63KM+us0Q==
-
-dn: cn=beqir3,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-mail: beqir.kuci@y
-telephoneNumber: 0600000000
-givenName: Beqir3
-postalAddress: Invalid
-sn: Kuci
-cn: beqir3
-title: Bootstrap Table etdirectory
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: TRUE
-userPassword: {SSHA}liUpZhyZ6pBOLzBnFkAh3DMuPyx05juGqM9ToQ==
-
-dn: cn=Carlo Rossi,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-employeeNumber: 1
-mail: carlo.rossi@gmail.com
-telephoneNumber: +39 340-123460
-givenName: Carlo
-sn: Rossi
-cn: Carlo Rossi
-title: Chief Financial Officer
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: TRUE
-userPassword: {SHA}5en6G6MezRroT3XKqkdPOmY/BfQ=
-
-dn: cn=dd,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-mail: beqir.kuci@y
-telephoneNumber: 0600000000
-givenName: user
-postalAddress: Invalid
-sn: test112
-cn: dd
-title: Bb
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: TRUE
-userPassword: 12
-
-dn: cn=fff,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-mail: beqir.kuci@y
-telephoneNumber: 0600000000
-givenName: fff
-postalAddress: Invalid
-sn: fff
-cn: fff
-title: Bb
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: TRUE
-userPassword: 11
-
-dn: cn=kotkot,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-mail: test@test@tt
-givenName: kot
-postalAddress: Invalid
-sn: test
-cn: kotkot
-title: kot
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: TRUE
-userPassword: {SSHA}uMfRJqY7u8jR5kJkQniiRuhyQbbUlD7650mDWA==
-
-dn: cn=kotkot1,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-mail: test@test@tt
-givenName: kot
-postalAddress: Invalid
-sn: test
-cn: kotkot1
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: TRUE
-userPassword: {SSHA}MXbKOqQ9cFxfb6d91KxcePrlUYTmvq1lgqm9FQ==
+objectClass: organizationalUnit
 
 dn: ou=IT,ou=Departments,dc=etdirectory,dc=net
-ou: IT
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-ou: Development
 objectClass: top
 objectClass: organizationalUnit
 
-dn: cn=Ada Kreci,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-mail: test2@test1.com
-telephoneNumber: +423542354325222
-givenName: new name3
-sn: test new3
-cn: Ada Kreci
-title: test3
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: TRUE
-userPassword:: IgBrAG8AdABrAG8AdAAxACIA
-
-dn: cn=Arvit Varfaj,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-employeeNumber: 3
-mail: avarfaj86@gmail.com
-telephoneNumber: +355 66-123456
-labeledURI: 2a3d300a-d2aa-495a-889d-d9c515746a03
-givenName: Arvit
-sn: Varfaj
-title: Programmer
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: TRUE
-userPassword: {MD5}SWRFE/Vl/unGyz5zctSyJA==
-cn: Arvit Varfaj
-
-dn: cn=Dritan Xhelili,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-mail: tanxhelili@gmail.com
-telephoneNumber: +5423452345235
-givenName: Dritan
-sn: Xhelili
-cn: Dritan Xhelili
-title: Developer
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: FALSE
-userPassword: {MD5}vBHwavubJwcGc0caI+zGqQ==
-
-dn: cn=Ema Sena,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-employeeNumber: 4
-mail: eme.sena@gmail.com
-telephoneNumber: +355 69-123456
-givenName: Ema
-sn: Sena
-cn: Ema Sena
-title: Developer
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: TRUE
-userPassword: {MD5}SWRFE/Vl/unGyz5zctSyJA==
-
-dn: cn=Test11 Test11,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-mail: asdfasf@test.com
-telephoneNumber: +23413412343
-givenName: Test11
-postalAddress: Invalid
-sn: Test11
-cn: Test11 Test11
-title: Test11
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: TRUE
-userPassword: {MD5}vBHwavubJwcGc0caI+zGqQ==
-
-dn: cn=test12 test123,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-mail: test12@test12.com
-telephoneNumber: +2342424333
-givenName: test12
-sn: test12
-cn: test12 test123
-title: test1234567
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: FALSE
-userPassword: {MD5}vBHwavubJwcGc0caI+zGqQ==
-
-dn: cn=test9 test9,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-mail: test9@test9.com
-telephoneNumber: +523452342
-givenName: test9
-postalAddress: Invalid
-sn: test9
-cn: test9 test9
-title: test9
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: TRUE
-userPassword: {MD5}vBHwavubJwcGc0caI+zGqQ==
-
-dn: cn=user test1,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-mail: beqir.kuci@y
-telephoneNumber: 0600000000
-labeledURI: sdjbfuwe-wgnwignw-wergwm
-givenName: usertest1
-postalAddress: Invalid
-sn: test
-cn: user test1
-title: user for test
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-objectClass: primaryKeyObject
-enabled: TRUE
-primaryKey: 51864861
-userPassword: {SSHA}t36JPtmO3IX+vnCaM5qr7newDn9awJqdysmn/Q==
-
-dn: cn=user1,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-mail: user1@172.24.1.17
-displayName: Joe User
-uid: user1
-givenName: Joe
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-sn: User
-cn: user1
-userPassword:: IgBrAG8AdABrAG8AdAAiAA==
-
-dn: cn=utente123,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-mail: beqir.kuci@y
-telephoneNumber: 123456
-givenName: utente123
-sn: utente123
-cn: utente123
-title: test222
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: FALSE
-userPassword: utente123
-
 dn: ou=Information Services,ou=IT,ou=Departments,dc=etdirectory,dc=net
-ou: Information Services
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Support,ou=IT,ou=Departments,dc=etdirectory,dc=net
-ou: Support
 objectClass: top
 objectClass: organizationalUnit
-
-dn: cn=Ada Kreci,ou=Support,ou=IT,ou=Departments,dc=etdirectory,dc=net
-mail: ada@gg
-telephoneNumber: 0600000000
-givenName: ada
-sn: Kreci
-cn: Ada Kreci
-title: ggg
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: FALSE
-
-dn: cn=ggg,ou=Support,ou=IT,ou=Departments,dc=etdirectory,dc=net
-mail: beqir.kuci@y
-telephoneNumber: 0600000000
-givenName: ggg
-postalAddress: Invalid
-sn: ggg
-cn: ggg
-title: Bbb
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: TRUE
-userPassword: 122
-
-dn: cn=test11 test11,ou=Support,ou=IT,ou=Departments,dc=etdirectory,dc=net
-mail: beqir.kuci@y
-telephoneNumber: 1233
-givenName: testutente
-sn: testutente
-cn: test11 test11
-title: Bootstrap Table etdirectory
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: FALSE
-userPassword: test
-
-dn: cn=test6 updated,ou=Support,ou=IT,ou=Departments,dc=etdirectory,dc=net
-mail: test@test
-telephoneNumber: 0600000000
-givenName: test6
-sn: test6
-cn: test6 updated
-title: ggg
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: FALSE
-userPassword: 123
-
-dn: cn=test8 test8,ou=Support,ou=IT,ou=Departments,dc=etdirectory,dc=net
-mail: test8@test8.com
-telephoneNumber: +2345234525
-givenName: test8
-postalAddress: Invalid
-sn: test8
-cn: test8 test8
-title: test8
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: TRUE
-userPassword: {MD5}vBHwavubJwcGc0caI+zGqQ==
 
 dn: ou=System,ou=IT,ou=Departments,dc=etdirectory,dc=net
-ou: System
 objectClass: top
 objectClass: organizationalUnit
 
-dn: cn=beqir kuci,ou=System,ou=IT,ou=Departments,dc=etdirectory,dc=net
-mail: beqir.kuci@y
-telephoneNumber: 0600000000
-givenName: Beqir
-postalAddress: Invalid
-sn: Kuci1
-cn: beqir kuci
-title: Ber
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: TRUE
-userPassword: 123456
-
 dn: ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-ou: Marketing
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Guests,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-ou: Guests
 objectClass: top
 objectClass: organizationalUnit
-
-dn: cn=kuci.beqir@gmail.com,ou=Guests,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-mail: kuci.beqir@gmail.com
-telephoneNumber: +000 00-000000
-givenName: Beqir
-postalAddress: Invalid
-sn: Kuci
-cn: kuci.beqir@gmail.com
-title: Guest user
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {SSHA}f0SrtoecL01TLhZPoAR/Ix3emr8S0mRKGXCLjA==
 
 dn: ou=Promoters,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-ou: Promoters
 objectClass: top
 objectClass: organizationalUnit
 
-dn: cn=Angela Bruni,ou=Promoters,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-employeeNumber: 6
-mail: angela.bruni@gmail.com
-telephoneNumber: +39 340-123458
-givenName: Angela
-sn: Bruni
-cn: Angela Bruni
-title: Promotor
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: TRUE
-
-dn: cn=Angelo Neri,ou=Promoters,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-employeeNumber: 10
-mail: angelo.nero@gmail.com
-telephoneNumber: +355 69-123456
-givenName: Angelo
-sn: Neri
-cn: Angelo Neri
-title: Promotor
-objectClass: enabledUser
-objectClass: top
-objectClass: inetOrgPerson
-objectClass: person
-objectClass: organizationalPerson
-enabled: TRUE
-
 dn: ou=Sales,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-ou: Sales
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-ou: Multiagenzia
 objectClass: top
 objectClass: organizationalUnit
 
 dn: ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-ou: Temporary
 objectClass: top
 objectClass: organizationalUnit
-
-dn: cn=alessandra.bettoni.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: alessandra.bettoni.to
-employeeNumber: 42
-givenName: Alessandra
-postalAddress: Invalid
-sn: Bettoni TO
-cn: alessandra.bettoni.to
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: 49,50,51,44,55,55,44,54,56,44,53,51,44,49,50,53,44,49,48,49,44,49,49,53,44,57,55,44,55,49,44,52,57,44,56,54,44,56,55,44,57,48,44,55,53,44,53,52,44,55,56,44,53,54,44,49,49,49,44,56,48,44,49,48,56,44,52,57,44,49,49,51,44,49,48,51,44,57,55,44,49,49,53,44,49,48,48,44,54,53,44,54,49,44,54,49
-
-dn: cn=alessandrapressato,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: alessandrapressato
-employeeNumber: 17
-givenName: alessandra
-postalAddress: Invalid
-sn: pressato
-cn: alessandrapressato
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}PvDJX4IANXeQYfG7OlBolA==
-
-dn: cn=alessandrobaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: alessandrobaldisserotto
-employeeNumber: 79
-givenName: Alessandro
-postalAddress: Invalid
-sn: Baldisserotto
-cn: alessandrobaldisserotto
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}Atk7i4Fyt8sCURX3ltbGfA==
-
-dn: cn=amelaidrizi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: amelaidrizi
-employeeNumber: 63
-givenName: Amela
-postalAddress: Invalid
-sn: Idrizi
-cn: amelaidrizi
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}35TAz5Buv+b9jr2hMpAP/A==
-
-dn: cn=amelmathlouthi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: amelmathlouthi
-employeeNumber: 80
-givenName:: QW1lbCA=
-postalAddress: Invalid
-sn: Mathlouthi
-cn: amelmathlouthi
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}M91JEF8mOjHsT5NG0rrElg==
-
-dn: cn=andreaguerra,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: andreaguerra
-employeeNumber: 71
-givenName: Andrea
-postalAddress: Invalid
-sn: Guerra
-cn: andreaguerra
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}x4s/zsu9bmvia+914B6ZbQ==
-
-dn: cn=andrealagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: andrealagomarsini
-employeeNumber: 68
-givenName: Andrea
-postalAddress: Invalid
-sn: Lagomarsini
-cn: andrealagomarsini
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}KPcZyJ738zzi4XhJBna1qw==
-
-dn: cn=angelapescarolo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: angelapescarolo
-employeeNumber: 26
-givenName: angela
-postalAddress: Invalid
-sn: pescarolo
-cn: angelapescarolo
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}wHZh9ZCswYfAO3dfusTIMQ==
-
-dn: cn=antonioriolo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: antonioriolo
-employeeNumber: 55
-givenName: Antonio
-postalAddress: Invalid
-sn: Riolo
-cn: antonioriolo
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}XPSzU/T/kTFSHX6YZPkqfQ==
-
-dn: cn=ariannabertin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: ariannabertin
-employeeNumber: 34
-givenName: arianna
-postalAddress: Invalid
-sn: bertin
-cn: ariannabertin
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}T57nyo1JfFO2zvrW9UuU1g==
-
-dn: cn=barbara.cuccarolo.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: barbara.cuccarolo.to
-employeeNumber: 43
-givenName: Barbara
-postalAddress: Invalid
-sn: Cucarolo TO
-cn: barbara.cuccarolo.to
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}vrIyDwCuy7Q3qxQVbK7zOA==
-
-dn: cn=betinagriggio,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: betinagriggio
-employeeNumber: 28
-givenName: betina
-postalAddress: Invalid
-sn: griggio
-cn: betinagriggio
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}Iu5N/ClXuTz+Kk/3o4LSBA==
-
-dn: cn=booking,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: booking
-employeeNumber: 73
-givenName: Booking
-postalAddress: Invalid
-sn: Booking
-cn: booking
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}xdJEVQzZULmnp/93jnsMEw==
-
-dn: cn=booking.de,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: booking.de
-employeeNumber: 37
-givenName: Booking
-postalAddress: Invalid
-sn: De
-cn: booking.de
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}fkkClGEaZ/s2I4V36ie2oQ==
-
-dn: cn=bookingusa,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: bookingusa
-employeeNumber: 49
-givenName: bookingusa
-postalAddress: Invalid
-sn: bookingusa
-cn: bookingusa
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}765vSefGepMP9K08244/jw==
-
-dn: cn=bruno.bottaro.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: bruno.bottaro.to
-employeeNumber: 41
-givenName: Bruno
-postalAddress: Invalid
-sn: Bottaro TO
-cn: bruno.bottaro.to
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}cruqU7Mpazgh5SJej36TJw==
-
-dn: cn=canton,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: canton
-employeeNumber: 4
-givenName: francesco
-postalAddress: Invalid
-sn: canton
-cn: canton
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
-
-dn: cn=carlofalzone,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: carlofalzone
-employeeNumber: 72
-givenName: Carlo
-postalAddress: Invalid
-sn: Falzone
-cn: carlofalzone
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}mebaCMYUiu3eLeQHvhc1Ig==
-
-dn: cn=caterina.rimoli.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: caterina.rimoli.to
-employeeNumber: 50
-givenName: Caterina
-postalAddress: Invalid
-sn: Rimoli TO
-cn: caterina.rimoli.to
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}9Ti3orV5REU4n1Py1UVWUg==
-
-dn: cn=chinello,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: chinello
-employeeNumber: 5
-givenName: nadia
-postalAddress: Invalid
-sn: chinello
-cn: chinello
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
-
-dn: cn=cogitoadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: cogitoadmin
-employeeNumber: 1
-givenName: Cogito
-postalAddress: Invalid
-sn: Srl
-cn: cogitoadmin
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}V5EC1S9JiQg3Be/HMeqG8g==
-
-dn: cn=dianabashota,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: dianabashota
-employeeNumber: 60
-givenName: Diana
-postalAddress: Invalid
-sn: Bashota
-cn: dianabashota
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}MicD1ctbxk1l+8M9Tmnf8g==
-
-dn: cn=elisa.magarotto@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: elisa.magarotto@evolutiontravelnetwork.com
-employeeNumber: 3
-givenName: evocom
-postalAddress: Invalid
-sn: evocom
-cn: elisa.magarotto@evolutiontravelnetwork.com
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
-
-dn: cn=essesolutions,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: essesolutions
-employeeNumber: 33
-givenName: essesolutions
-postalAddress: Invalid
-sn: essesolutions
-cn: essesolutions
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}26HmJP0o9Svc7OApfPAtKw==
-
-dn: cn=etadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: etadmin
-employeeNumber: 2
-givenName: etadmin
-postalAddress: Invalid
-sn: etadmin
-cn: etadmin
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}Nq1lmDe3NnU/EpMj2nLvKA==
-
-dn: cn=etnpagamenti,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: etnpagamenti
-employeeNumber: 35
-givenName: etn
-postalAddress: Invalid
-sn: pagamenti
-cn: etnpagamenti
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}O6QaL58kdV4b+eP4MLZvKQ==
-
-dn: cn=eugenabashli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: eugenabashli
-employeeNumber: 40
-givenName: eugena
-postalAddress: Invalid
-sn: bashli
-cn: eugenabashli
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}P2mUAcUHtnFmUf8RvqLOtg==
-
-dn: cn=fatjonanamali,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: fatjonanamali
-employeeNumber: 74
-givenName: Fatjon
-postalAddress: Invalid
-sn: Anamali
-cn: fatjonanamali
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}Yaz8XUNLhX/GURi6bqEQQg==
-
-dn: cn=francesco.schettini@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: francesco.schettini@evolutiontravelnetwork.com
-employeeNumber: 12
-givenName: Francesco
-postalAddress: Invalid
-sn: Schettini
-cn: francesco.schettini@evolutiontravelnetwork.com
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}zrgX5OanomC9wSeTBru+SQ==
-
-dn: cn=franco.sparacino@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: franco.sparacino@evolutiontravelnetwork.com
-employeeNumber: 15
-givenName: Franco
-postalAddress: Invalid
-sn: Sparacino
-cn: franco.sparacino@evolutiontravelnetwork.com
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}1B2M2Y8AsgTpgAmY7PhCfg==
-
-dn: cn=g.trivigno,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: g.trivigno
-employeeNumber: 75
-givenName: Giovanni
-postalAddress: Invalid
-sn: Trivigno
-cn: g.trivigno
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}6YSRlRPUAoD9MQ/1oxvuiA==
-
-dn: cn=gerhaldabashli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: gerhaldabashli
-employeeNumber: 36
-givenName: Gerhalda
-postalAddress: Invalid
-sn: Bashli
-cn: gerhaldabashli
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}uHAmJsVDJDZrNkdRRCQdpQ==
-
-dn: cn=giorgiadametto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: giorgiadametto
-employeeNumber: 32
-givenName: Giorgia
-postalAddress: Invalid
-sn: Dametto
-cn: giorgiadametto
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}3UARfE6F+PC6Q66O4CggyA==
-
-dn: cn=guendalinavigorelli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: guendalinavigorelli
-employeeNumber: 31
-givenName: guendalina
-postalAddress: Invalid
-sn: vigorelli
-cn: guendalinavigorelli
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}CAsPS9I9m1muLTCZD2SfyQ==
-
-dn: cn=houdaouni,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: houdaouni
-employeeNumber: 22
-givenName: Houda
-postalAddress: Invalid
-sn: Ouni
-cn: houdaouni
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}xhLctE697j+Hn9b9LM25sg==
-
-dn: cn=ilircopja,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: ilircopja
-employeeNumber: 78
-givenName: Ilir
-postalAddress: Invalid
-sn: Copja
-cn: ilircopja
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}Vm6DmqWsZBEd0Sc3onFtDw==
-
-dn: cn=indifatapiranaj,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: indifatapiranaj
-employeeNumber: 76
-givenName: Indifata
-postalAddress: Invalid
-sn: Piranaj
-cn: indifatapiranaj
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}RjlvR4060wBVzZDI1H0cAA==
-
-dn: cn=intissarkrir,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: intissarkrir
-employeeNumber: 62
-givenName: Intissar
-postalAddress: Invalid
-sn: Krir
-cn: intissarkrir
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}DtXB4zdpnPnYTG0w2ozuTg==
-
-dn: cn=karim.taher@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: karim.taher@evolutiontravelnetwork.com
-employeeNumber: 16
-givenName: Karim
-postalAddress: Invalid
-sn: Taher
-cn: karim.taher@evolutiontravelnetwork.com
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
-
-dn: cn=katiuscia.tonello@gmail.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: katiuscia.tonello@gmail.com
-employeeNumber: 6
-givenName: katiuscia
-postalAddress: Invalid
-sn: tonello
-cn: katiuscia.tonello@gmail.com
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
-
-dn: cn=kejdabodlli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: kejdabodlli
-employeeNumber: 67
-givenName: kejda
-postalAddress: Invalid
-sn: bodlli
-cn: kejdabodlli
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}35JYX4B9tPb9nWA+4fWApg==
-
-dn: cn=lauralami,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: lauralami
-employeeNumber: 56
-givenName: Laura
-postalAddress: Invalid
-sn: Lami
-cn: lauralami
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}eoZ3gqExA9bW5pc5hBig/A==
-
-dn: cn=lindagharsallah,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: lindagharsallah
-employeeNumber: 21
-givenName: Linda
-postalAddress: Invalid
-sn: GHARSALLAH
-cn: lindagharsallah
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}mz4AgkrgrbRbLPOhlYcUzg==
-
-dn: cn=lisa.favaro@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: lisa.favaro@evolutiontravelnetwork.com
-employeeNumber: 14
-givenName: Lisa
-postalAddress: Invalid
-sn: Favaro
-cn: lisa.favaro@evolutiontravelnetwork.com
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
-
-dn: cn=loris.zucchetti.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: loris.zucchetti.to
-employeeNumber: 44
-givenName: Loris
-postalAddress: Invalid
-sn: Zucchetti TO
-cn: loris.zucchetti.to
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}9badpLR8mQyqrdDysO+Y2Q==
-
-dn: cn=lucabaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: lucabaldisserotto
-employeeNumber: 10
-givenName: Luca
-postalAddress: Invalid
-sn: Baldisserotto
-cn: lucabaldisserotto
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}o8u+Vhxm2XuDX2gCLs0VbA==
-
-dn: cn=luciadaccico,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: luciadaccico
-employeeNumber: 27
-givenName: lucia
-postalAddress: Invalid
-sn: daccico
-cn: luciadaccico
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}h1TzSAkqeTzJQhMAFa9Myg==
-
-dn: cn=manuel.bisson@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: manuel.bisson@evolutiontravelnetwork.com
-employeeNumber: 18
-givenName: Manuel
-postalAddress: Invalid
-sn: Bisson
-cn: manuel.bisson@evolutiontravelnetwork.com
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
-
-dn: cn=manuela.aprile.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: manuela.aprile.to
-employeeNumber: 51
-givenName: Manuela
-postalAddress: Invalid
-sn: Aprile TO
-cn: manuela.aprile.to
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}8IRQ+59/OUcP6lh6H0gpQQ==
-
-dn: cn=marcosparacino,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: marcosparacino
-employeeNumber: 30
-givenName: marco
-postalAddress: Invalid
-sn: sparacino
-cn: marcosparacino
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}03gEJX2gEt1hYRqFtYgk5w==
-
-dn: cn=mariachiaramarsella,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: mariachiaramarsella
-employeeNumber: 59
-givenName: Mariachiara
-postalAddress: Invalid
-sn: Marsella
-cn: mariachiaramarsella
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}IKczmmBOEbI0WN7ZBN/vaw==
-
-dn: cn=mariamhached,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: mariamhached
-employeeNumber: 69
-givenName: Mariam
-postalAddress: Invalid
-sn: Hached
-cn: mariamhached
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}8IYa8jlaD5Xy823I4GYsXA==
-
-dn: cn=marinagasparini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: marinagasparini
-employeeNumber: 65
-givenName: Marina
-postalAddress: Invalid
-sn: Gasparini
-cn: marinagasparini
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}vH6AiTyzf7CaNMRz/tk7vg==
-
-dn: cn=melchionda,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: melchionda
-employeeNumber: 9
-givenName: vincenzo
-postalAddress: Invalid
-sn: melchionda
-cn: melchionda
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
-
-dn: cn=mioaradragomir,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: mioaradragomir
-employeeNumber: 11
-givenName: Mioara
-postalAddress: Invalid
-sn: Dragomir
-cn: mioaradragomir
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}XQ4goMzsNgz/prKLtCox8g==
-
-dn: cn=monicasergiano,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: monicasergiano
-employeeNumber: 23
-givenName: monica
-postalAddress: Invalid
-sn: sergiano
-cn: monicasergiano
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}tRzoa6dBDJ+IVzpUre22gA==
-
-dn: cn=morelo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: morelo
-employeeNumber: 7
-givenName: sara
-postalAddress: Invalid
-sn: morelo
-cn: morelo
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
-
-dn: cn=nicola.paci.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: nicola.paci.to
-employeeNumber: 45
-givenName: Nicola
-postalAddress: Invalid
-sn: Paci TO
-cn: nicola.paci.to
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}jGoSqTkOx1kKZyalop+kyA==
-
-dn: cn=nicolavitale,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: nicolavitale
-employeeNumber: 57
-givenName: Nicola
-postalAddress: Invalid
-sn: Vitale
-cn: nicolavitale
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}yIoi0FNuewuAQtqho9L0Aw==
-
-dn: cn=ouaelbetbout,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: ouaelbetbout
-employeeNumber: 38
-givenName: ouael
-postalAddress: Invalid
-sn: betbout
-cn: ouaelbetbout
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}/kHXMH0zfTpKdxhnUtS2TQ==
-
-dn: cn=pavan.elisa@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: pavan.elisa@evolutiontravelnetwork.com
-employeeNumber: 20
-givenName: Elisa
-postalAddress: Invalid
-sn: Pavan
-cn: pavan.elisa@evolutiontravelnetwork.com
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
-
-dn: cn=ptotest,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: ptotest
-employeeNumber: 39
-givenName: ptotest
-postalAddress: Invalid
-sn: ptotest
-cn: ptotest
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}wK3Y0L7tbkFkehJAQWrYSg==
-
-dn: cn=qsoftadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: qsoftadmin
-employeeNumber: 64
-givenName: QSoft
-postalAddress: Invalid
-sn: QSoft
-cn: qsoftadmin
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}5Vgwh4ldmmw/1OdDXXf97w==
-
-dn: cn=redazione,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: redazione
-employeeNumber: 70
-givenName: Redazione
-postalAddress: Invalid
-sn: Redazione
-cn: redazione
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}XMmWtoOHEcI8hr4MeAvmgg==
-
-dn: cn=rimtoumi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: rimtoumi
-employeeNumber: 24
-givenName: Rim
-postalAddress: Invalid
-sn: Toumi
-cn: rimtoumi
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}wMLROpO+ZIN/VFdVGDJlIQ==
-
-dn: cn=roberta.baldassarri.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: roberta.baldassarri.to
-employeeNumber: 46
-givenName: Roberta
-postalAddress: Invalid
-sn: Baldassarri TO
-cn: roberta.baldassarri.to
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}5jElZ8HFq5iuI7CJcV2ZfQ==
-
-dn: cn=simone.pegoraro@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: simone.pegoraro@evolutiontravelnetwork.com
-employeeNumber: 19
-givenName: Simone
-postalAddress: Invalid
-sn: Pegoraro
-cn: simone.pegoraro@evolutiontravelnetwork.com
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
-
-dn: cn=soumayachebbi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: soumayachebbi
-employeeNumber: 25
-givenName: Soumaya
-postalAddress: Invalid
-sn: Chebbi
-cn: soumayachebbi
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}h+Bt0IFPRH7mN/4oFAECew==
-
-dn: cn=stelasmajli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: stelasmajli
-employeeNumber: 58
-givenName: Stela
-postalAddress: Invalid
-sn: Smajli
-cn: stelasmajli
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}QWrdURkPydbLJs0V1E1zog==
-
-dn: cn=tamara.magarotto.network@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: tamara.magarotto.network@evolutiontravelnetwork.com
-employeeNumber: 13
-givenName: Tamara
-postalAddress: Invalid
-sn: Magarotto
-cn: tamara.magarotto.network@evolutiontravelnetwork.com
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}pgRvieg2IUvlYznUuRm5Pg==
-
-dn: cn=testlead,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: testlead
-employeeNumber: 77
-givenName: testlead
-postalAddress: Invalid
-sn: testlead
-cn: testlead
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}CqXVMWc4kDFHXOch+axbZw==
-
-dn: cn=testuser,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: testuser
-employeeNumber: 52
-givenName: Test user
-postalAddress: Invalid
-sn: Cogito
-cn: testuser
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}LZCPACSQcXIZqyznvKFPZQ==
-
-dn: cn=valentina.mazzatenta.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: valentina.mazzatenta.to
-employeeNumber: 47
-givenName: Valentina
-postalAddress: Invalid
-sn: Mazzatenta TO
-cn: valentina.mazzatenta.to
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}AOYWnyn7GLiwBTJ+gniMvw==
-
-dn: cn=veramarku,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: veramarku
-employeeNumber: 61
-givenName: Vera
-postalAddress: Invalid
-sn: Marku
-cn: veramarku
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}e4vIDjTQqnIg1pmsA8i4qQ==
-
-dn: cn=wafamejdi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: wafamejdi
-employeeNumber: 29
-givenName: wafa
-postalAddress: Invalid
-sn: mejdi
-cn: wafamejdi
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}WJ2z7iYiDMJfg+N+GgjTHg==
-
-dn: cn=walter.quintavalle.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: walter.quintavalle.to
-employeeNumber: 48
-givenName: Walter
-postalAddress: Invalid
-sn: Quintavalle TO
-cn: walter.quintavalle.to
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}xi0CKGRQLhOg1/m3qd0G8w==
-
-dn: cn=wirecarduser,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: wirecarduser
-employeeNumber: 54
-givenName: w
-postalAddress: Invalid
-sn: w
-cn: wirecarduser
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}KfAE8oDJ3uT47Z7t24vfXg==
-
-dn: cn=yosratoumi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: yosratoumi
-employeeNumber: 66
-givenName:: WW9zcmEg
-postalAddress: Invalid
-sn: Toumi
-cn: yosratoumi
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: TRUE
-userPassword: {MD5}svaej424+y52zw6zW6c1zw==
-
-dn: cn=zevalos,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-telephoneNumber: +000 00-000000
-mail: zevalos
-employeeNumber: 8
-givenName: miranda
-postalAddress: Invalid
-sn: zevalos
-cn: zevalos
-title: Users from Multiagenzia
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-objectClass: enabledUser
-enabled: FALSE
-userPassword: {MD5}X03MO1qnZdYdgyfeuILPmQ==
 
 dn: ou=Groups,dc=etdirectory,dc=net
-ou: Groups
 objectClass: top
 objectClass: organizationalUnit
 
-dn: cn=NEW_GROUP2,ou=Groups,dc=etdirectory,dc=net
-member: cn=System,ou=System,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=Carlo Rossi,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-description: A new group2
-cn: NEW_GROUP2
+dn: cn=Amministratore BI,ou=Groups,dc=etdirectory,dc=net
+description: Puo' accedere all'interfaccia web di Pentaho con privilegi amministrativi
+cn: Amministratore BI
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=Amministratore commerciali e segnalatori,ou=Groups,dc=etdirectory,dc=net
+description:: UHXDsiB2aXN1YWxpenphcmUgZSBtb2RpZmljYXJlIGkgZGF0aSBkZWkgY29tbWVyY2lhbGkgZSBkZWkgc2VnbmFsYXRvcmkgYXNzb2NpYXRpIGFsbCdhZ2VuemlhIGEgY3VpIGwndXRlbnRlIMOoIGNvbGxlZ2F0by4=
+cn: Amministratore commerciali e segnalatori
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=Amministratore di agenzia,ou=Groups,dc=etdirectory,dc=net
+description:: UHXDsiB2aXN1YWxpenphcmUgZSBtb2RpZmljYXJlIGkgZGF0aSBkZWxsJ2FnZW56aWEgYSBjdWkgbCd1dGVudGUgw6ggY29sbGVnYXRvLg==
+cn: Amministratore di agenzia
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=Amministratore di promotori,ou=Groups,dc=etdirectory,dc=net
+description:: UHXDsiBhbmFncmFmYXJlIHVuIG51b3ZvIHByb21vdG9yZSwgdmlzdWFsaXp6YXJlIGUgbW9kaWZpY2FyZSBpIGRhdGkgZGVpIHByb21vdG9yaSBhc3NvY2lhdGkgYWxsJ2FnZW56aWEgYSBjdWkgbCd1dGVudGUgw6ggY29sbGVnYXRvLg==
+cn: Amministratore di promotori
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=Amministratore formazione,ou=Groups,dc=etdirectory,dc=net
+description:: UHXDsiB2aXN1YWxpenphcmUgZSBtb2RpZmljYXJlIGkgZGF0aSBkZWkgY29yc2ksIGkgdGlwaSBkZWkgY29yc2kgZGVsbCdhZ2VuemlhIGEgY3VpIMOoIGNvbGxlZ2F0by4=
+cn: Amministratore formazione
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=Amministratore JR di agenzia,ou=Groups,dc=etdirectory,dc=net
+description:: UHXDsiB2aXN1YWxpenphcmUgZSBtb2RpZmljYXJlIGkgZGF0aSBkZWxsJ2FnZW56aWEgYSBjdWkgbCd1dGVudGUgw6ggY29sbGVnYXRvLg==
+cn: Amministratore JR di agenzia
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=Amministratore sezione amministrativa,ou=Groups,dc=etdirectory,dc=net
+description:: UHXDsiBtb2RpZmljYXJlIGxlIHBvc3RhemlvbmksIGxlIHJhdGUsIGxlIGRpc3RpbnRlIGUgbGUgcHJvdnZpZ2lvbmkgZGkgc29nZ2V0dGkgYXNzb2NpYXRpIGFsbCdhZ2VuemlhIGEgY3VpIGwndXRlbnRlIMOoIGNvbGxlZ2F0by4=
+cn: Amministratore sezione amministrativa
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=Amministratore sistema,ou=Groups,dc=etdirectory,dc=net
+description: tutte le routes
+cn: Amministratore sistema
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=BRA,ou=Groups,dc=etdirectory,dc=net
+description: Agency BRA
+cn: BRA
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=Commerciale,ou=Groups,dc=etdirectory,dc=net
+description:: UHXDsiB2aXN1YWxpenphcmUgdHV0dGkgaSBwcm9tb3RvcmkgYXNzb2NpYXRpIGFsbCdhZ2VuemlhIGEgY3VpIMOoIGNvbGxlZ2F0byBlIGFuYWdyYWZhcmUgcHJvbW90b3JpIHN1bGwnYWdlbnppYSBhIGN1aSDDqCBjb2xsZWdhdG8u
+cn: Commerciale
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=ESP,ou=Groups,dc=etdirectory,dc=net
+description: Agency ESP
+cn: ESP
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=Etraveller,ou=Groups,dc=etdirectory,dc=net
+cn: Etraveller
 objectClass: top
 objectClass: groupOfNames
 
+dn: cn=Etraveller Free,ou=Groups,dc=etdirectory,dc=net
+description: Group of Etraveller Free
+cn: Etraveller Free
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=Events,ou=Groups,dc=etdirectory,dc=net
+cn: Events
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=FRA,ou=Groups,dc=etdirectory,dc=net
+description: Agency FRA
+cn: FRA
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=GBR,ou=Groups,dc=etdirectory,dc=net
+description: Agency GBR
+cn: GBR
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=GER,ou=Groups,dc=etdirectory,dc=net
+description: Agency GER
+cn: GER
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=ITA,ou=Groups,dc=etdirectory,dc=net
+description: Agency ITA
+cn: ITA
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=Lettore agenzie,ou=Groups,dc=etdirectory,dc=net
+description:: UHXDsiB2aXN1YWxpenphcmUgaSBkYXRpIGRlbGwnYWdlbnppYSBhIGN1aSDDqCBjb2xsZWdhdG8u
+cn: Lettore agenzie
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=Lettore BI,ou=Groups,dc=etdirectory,dc=net
+description:: UHXDsiBhY2NlZGVyZSBhbGwnaW50ZXJmYWNjaWEgd2ViIGRpIFBlbmF0aG8gZSB2aXN1YWxpenphcmUgaSByZXBvcnRz
+cn: Lettore BI
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=Lettore commerciali,ou=Groups,dc=etdirectory,dc=net
+description:: UHXDsiB2aXN1YWxpenphcmUgaSBkYXRpIGRlaSBjb21tZXJjaWFsaSBlIGRlaSBzZWduYWxhdG9yaSBhc3NvY2lhdGkgYWxsJ2FnZW56aWEgYSBjdWkgw6ggY29sbGVnYXRvLg==
+cn: Lettore commerciali
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=Lettore promotori,ou=Groups,dc=etdirectory,dc=net
+description:: UHXDsiB2aXN1YWxpenphcmUgaSBkYXRpIGRlaSBwcm9tb3RvcmkgYXNzb2NpYXRpIGFsbCdhZ2VuemlhIGEgY3VpIMOoIGNvbGxlZ2F0by4=
+cn: Lettore promotori
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=News,ou=Groups,dc=etdirectory,dc=net
+cn: News
+objectClass: groupOfNames
+objectClass: top
+
 dn: cn=POWER_USER,ou=Groups,dc=etdirectory,dc=net
-labeledURI: 82$#%&^*)()(_)+
-member: cn=Angelo Neri,ou=Promoters,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-member: cn=alessandrobaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=katiuscia.tonello@gmail.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=redazione,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=beqir3,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=Andrea Lagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
 description: Some More Privileges
 cn: POWER_USER
 objectClass: top
 objectClass: groupOfNames
 objectClass: labeledURIObject
 
+dn: cn=Promoters,ou=Groups,dc=etdirectory,dc=net
+description: Group of all Promoters
+cn: Promoters
+objectClass: groupOfNames
+objectClass: top
+
 dn: cn=ROLE_ADMIN,ou=Groups,dc=etdirectory,dc=net
-member: cn=Carlo Rossi,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=Angela Bruni,ou=Promoters,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-member: cn=mioaradragomir,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=indifatapiranaj,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=Ema Sena,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=Ada Kreci,ou=Support,ou=IT,ou=Departments,dc=etdirectory,dc=net
 description: Super Users
 cn: ROLE_ADMIN
 objectClass: top
 objectClass: groupOfNames
 
+dn: cn=ROLE_ADMIN_TICKET,ou=Groups,dc=etdirectory,dc=net
+cn: ROLE_ADMIN_TICKET
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=ROLE_POWER_TICKET,ou=Groups,dc=etdirectory,dc=net
+cn: ROLE_POWER_TICKET
+objectClass: groupOfNames
+objectClass: top
+
 dn: cn=ROLE_SUPER_ADMIN,ou=Groups,dc=etdirectory,dc=net
-member: cn=System,ou=System,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=alessandrobaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
 description: Super admin roles, including user role administration
 cn: ROLE_SUPER_ADMIN
 objectClass: top
 objectClass: groupOfNames
 
 dn: cn=ROLE_USER,ou=Groups,dc=etdirectory,dc=net
-member: cn=Carlo Rossi,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=Angela Bruni,ou=Promoters,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-member: cn=Angelo Neri,ou=Promoters,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-member: cn=dianabashota,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=canton,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=carlofalzone,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=mioaradragomir,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=ilircopja,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=veramarku,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=melchionda,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=ariannabertin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=wirecarduser,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=etnpagamenti,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=barbara.cuccarolo.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=antonellagambato,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=walter.quintavalle.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=essesolutions,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=tamara.magarotto.network@etdirectorynetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=bruno.bottaro.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=morelo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=zevalos,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=ptotest,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=eugenabashli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=luciadaccico,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=mariachiaramarsella,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=karim.taher@etdirectorynetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=chinello,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=simone.pegoraro@etdirectorynetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=pavan.elisa@etdirectorynetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=elisa.magarotto@etdirectorynetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=katiuscia.tonello@gmail.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=lisa.favaro@etdirectorynetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=booking.de,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=marcosparacino,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=franco.sparacino@etdirectorynetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=betinagriggio,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=loris.zucchetti.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=bookingusa,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=antonioriolo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=mariamhached,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=soumayachebbi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=nicola.paci.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=caterina.rimoli.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=manuela.aprile.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=roberta.baldassarri.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=valentina.mazzatenta.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=giorgiadametto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=houdaouni,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=intissarkrir,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=alessandrapressato,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=cogitoadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=andrealagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=amelaidrizi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=lucabaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=qsoftadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=testlead,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=fatjonanamali,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=kejdabodlli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=guendalinavigorelli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=monicasergiano,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=etadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=stelasmajli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=lauralami,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=booking,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=nicolavitale,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=lindagharsallah,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=redazione,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=g.trivigno,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=ouaelbetbout,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=yosratoumi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=rimtoumi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=gerhaldabashli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=andreaguerra,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=indifatapiranaj,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=testuser,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=alessandrobaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=angelapescarolo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=marinagasparini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=wafamejdi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=amelmathlouthi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=francesco.schettini@etdirectorynetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=guest@guest.com,ou=Guests,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-member: cn=kuci.beqir@gmail.com,ou=Guests,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-member: cn=test12 test123,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=Dritan Xhelili,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=qqqqqqqq,ou=Guests,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-member: cn=kotkot,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=test8 test8,ou=Support,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=test9 test9,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=kotkot1,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=kotkot3,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=user test1,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=antonellagambato,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=kotkot3,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=test10 test10,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=test11 test11,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=beqir2,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=beqir3,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=test 5 6,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=test6 updated,ou=Support,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=Test11 Test11,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=dd,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=fff,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=ggg,ou=Support,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=beqir kuci,ou=System,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=Andrea Lagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=beqir3,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=test11 test11,ou=Support,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=utente123,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=Ada Kreci,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=tamara.magarotto.network@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=karim.taher@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=manuel.bisson@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=simone.pegoraro@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=pavan.elisa@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=elisa.magarotto@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=lisa.favaro@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=alessandra.bettoni.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=franco.sparacino@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=francesco.schettini@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
 description: Ordinary Users
 cn: ROLE_USER
 objectClass: top
 objectClass: groupOfNames
 
-dn: cn=tes2,ou=Groups,dc=etdirectory,dc=net
-member: cn=System,ou=System,ou=IT,ou=Departments,dc=etdirectory,dc=net
-description: dec
-cn: tes2
+dn: cn=ROLE_USER_TICKET,ou=Groups,dc=etdirectory,dc=net
+cn: ROLE_USER_TICKET
 objectClass: groupOfNames
 objectClass: top
 
-dn: cn=tesi,ou=Groups,dc=etdirectory,dc=net
-member: cn=System,ou=System,ou=IT,ou=Departments,dc=etdirectory,dc=net
-cn: tesi
+dn: cn=RUS,ou=Groups,dc=etdirectory,dc=net
+description: Agency RUS
+cn: RUS
 objectClass: groupOfNames
 objectClass: top
 
-dn: cn=TestGroup_Beqir_01,ou=Groups,dc=etdirectory,dc=net
-member: cn=System,ou=System,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=beqir3,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=alessandrobaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=beqir2,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=kuci.beqir@gmail.com,ou=Guests,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-description:: dGVzdCBieSBCZXFpciA=
-cn: TestGroup_Beqir_01
-objectClass: top
+dn: cn=SuperPostUsers,ou=Groups,dc=etdirectory,dc=net
+cn: SuperPostUsers
 objectClass: groupOfNames
+objectClass: top
+
+dn: cn=test,ou=Groups,dc=etdirectory,dc=net
+description: test description
+cn: test
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=USA,ou=Groups,dc=etdirectory,dc=net
+description: Agency USA
+cn: USA
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=Users,ou=Groups,dc=etdirectory,dc=net
+description: Group of all Users
+cn: Users
+objectClass: groupOfNames
+objectClass: top
 
 dn: ou=Oauth,dc=etdirectory,dc=net
-ou: Oauth
 objectClass: top
 objectClass: organizationalUnit
 
 dn: cn=OAUTH_ROLE_PROMOTORS,ou=Oauth,dc=etdirectory,dc=net
-oauthScope: read
 oauthTokenValidity: 60000
-member: cn=Ema Sena,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=Angela Bruni,ou=Promoters,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-member: cn=Ada Kreci,ou=Support,ou=IT,ou=Departments,dc=etdirectory,dc=net
 oauthClientSecret: secret
 description: Oauth Client for promoters
 oauthClientIdentifier: oauth_client_promotors
 cn: OAUTH_ROLE_PROMOTORS
 objectClass: oauthClientIdentity
 objectClass: top
-refreshTokenValidity: 60000
-oauthGrantType: userPassword
+oauthGrantType: password, client_credentials, refresh_token
 
 dn: cn=OAUTH_ROLE_USER,ou=Oauth,dc=etdirectory,dc=net
-oauthScope: read, write
-oauthTokenValidity: 60000
-member: cn=Angelo Neri,ou=Promoters,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-member: cn=Ema Sena,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=dianabashota,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=canton,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=carlofalzone,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=mioaradragomir,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=ilircopja,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=veramarku,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=melchionda,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=ariannabertin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=wirecarduser,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=etnpagamenti,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=barbara.cuccarolo.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=antonellagambato,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=walter.quintavalle.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=essesolutions,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=tamara.magarotto.network@etdirectorynetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=bruno.bottaro.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=morelo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=zevalos,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=ptotest,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=eugenabashli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=luciadaccico,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=mariachiaramarsella,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=karim.taher@etdirectorynetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=chinello,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=manuel.bisson@etdirectorynetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=simone.pegoraro@etdirectorynetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=pavan.elisa@etdirectorynetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=elisa.magarotto@etdirectorynetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=katiuscia.tonello@gmail.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=lisa.favaro@etdirectorynetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=booking.de,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=alessandra.bettoni.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=marcosparacino,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=franco.sparacino@etdirectorynetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=betinagriggio,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=loris.zucchetti.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=bookingusa,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=antonioriolo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=mariamhached,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=soumayachebbi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=nicola.paci.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=caterina.rimoli.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=manuela.aprile.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=roberta.baldassarri.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=valentina.mazzatenta.to,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=giorgiadametto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=houdaouni,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=intissarkrir,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=alessandrapressato,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=cogitoadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=andrealagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=amelaidrizi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=lucabaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=qsoftadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=testlead,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=fatjonanamali,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=kejdabodlli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=guendalinavigorelli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=monicasergiano,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=etadmin,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=stelasmajli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=lauralami,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=booking,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=nicolavitale,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=lindagharsallah,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=redazione,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=g.trivigno,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=ouaelbetbout,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=yosratoumi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=rimtoumi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=gerhaldabashli,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=andreaguerra,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=indifatapiranaj,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=testuser,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=alessandrobaldisserotto,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=angelapescarolo,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=marinagasparini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=wafamejdi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=amelmathlouthi,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=francesco.schettini@etdirectorynetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=kot test,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=kotkot,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=guest@guest.com,ou=Guests,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-member: cn=qqqqqqqq,ou=Guests,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-member: cn=kuci.beqir@gmail.com,ou=Guests,ou=Marketing,ou=Departments,dc=etdirectory,dc=net
-member: cn=kotkot,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=kotnew,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=test12 test123,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=Dritan Xhelili,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=kotkot1,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=kotkot3,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=user test1,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=antonellagambato,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=kotkot3,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=test10 test10,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=test11 test11,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=beqir2,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=beqir3,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=test 5 6,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=test6 updated,ou=Support,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=Test11 Test11,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=dd,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=fff,ou=General,ou=Accounting,ou=Departments,dc=etdirectory,dc=net
-member: cn=ggg,ou=Support,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=beqir kuci,ou=System,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=Andrea Lagomarsini,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=beqir3,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=test11 test11,ou=Support,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=utente123,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=Ada Kreci,ou=Development,ou=IT,ou=Departments,dc=etdirectory,dc=net
-member: cn=tamara.magarotto.network@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=karim.taher@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=manuel.bisson@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=simone.pegoraro@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=pavan.elisa@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=elisa.magarotto@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=lisa.favaro@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=franco.sparacino@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
-member: cn=francesco.schettini@evolutiontravelnetwork.com,ou=Temporary,ou=Multiagenzia,ou=Departments,dc=etdirectory,dc=net
 oauthClientSecret: secret
 description: Oauth client for public resources
 oauthClientIdentifier: client_foo
 cn: OAUTH_ROLE_USER
 objectClass: oauthClientIdentity
 objectClass: top
-refreshTokenValidity: 600000
+oauthTokenValidity: 300
 oauthGrantType: password, client_credentials, refresh_token
 
 dn: cn=OAUTH_TEST,ou=Oauth,dc=etdirectory,dc=net
-oauthTokenValidity: 600
-oauthClientSecret: new_secret
-member: cn=System,ou=System,ou=IT,ou=Departments,dc=etdirectory,dc=net
 description: desc updated
-oauthClientIdentifier: client_test
 cn: OAUTH_TEST
 objectClass: oauthClientIdentity
 objectClass: top
-oauthGrantType: userPassword, refresh_token
+oauthClientIdentifier: fooClientIdPassword
+oauthClientSecret: secret
+oauthGrantType: password, client_credentials, refresh_token
+oauthTokenValidity: 300
 
